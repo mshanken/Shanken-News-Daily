@@ -48,9 +48,6 @@ if ( !is_admin() ) {
 	wp_register_script('modernizr', get_bloginfo('template_directory') . "/js/libs/modernizr-1.7.min.js");
 	wp_enqueue_script('modernizr');
 	
-	wp_register_script('belatedpng', get_bloginfo('template_directory') . "/js/libs/dd_belatedpng.js");
-	wp_enqueue_script('belatedpng');
-	
 	wp_register_script('plugins', get_bloginfo('template_directory') . "/js/plugins.js");
 	wp_enqueue_script('plugins');
 	
