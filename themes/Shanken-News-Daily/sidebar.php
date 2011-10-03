@@ -1,15 +1,13 @@
 <div id="sidebar" class="one_third">
 		
-		<div id="search-container">
-			<form id="searchform" action="" method="get" role="search">
-				<div class="search-mobile">
-					<div class="search-input">
-						<input id="s" type="search" name="s" value=""  placeholder="Search SND" x-webkit-speech="" x-webkit-grammar="builtin:search" onwebkitspeechchange="startSearch()">
-						<input id="searchsubmit" type="submit" value=""/>
-					</div><!--/search-input-->
-				</div><!--/search-mobile-->
-			</form><!--/searchform-->
-		</div><!--/search-container-->
+		<form id="search-form-inline" action="" method="get" role="search">
+							<div class="search-wrap">
+								<div class="search-input">
+									<input id="s" type="search" name="s" value=""  placeholder="search..." x-webkit-speech="" x-webkit-grammar="builtin:search" onwebkitspeechchange="startSearch()">
+									<input id="search-submit" type="submit" value=""/>
+								</div><!--/search-input-->
+							</div><!--/search-wrap-->
+						</form><!--/searchform-->
 <?php
 	/* When we call the dynamic_sidebar() function, it'll spit out
 	 * the widgets for that widget area. If it instead returns false,

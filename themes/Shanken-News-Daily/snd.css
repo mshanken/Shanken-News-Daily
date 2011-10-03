@@ -242,8 +242,8 @@ a.addthis_button_preferred_1:hover, a.addthis_button_preferred_2:hover, a.addthi
 	margin-left: 17px;
 }
 #sidebar label {display: none;}
-#searchform {
-    margin:18px 0 8px;
+#search-form-inline {
+    margin:18px 8px 8px;
 }
 #sidebar .widget-container {padding: 10px; margin: 6px 0px;}
 #searchform input[type="search"] {
@@ -461,6 +461,9 @@ table#wp-calendar, #wp-calendar tbody, #wp-calendar tfoot, #wp-calendar thead, #
 	margin-bottom: 4px;
 	color:rgba(180,180,180,0.8);
 	text-shadow: 0 1px 0 rgba(250,250,250,1);
+}
+td#next {
+	text-align: right;
 }
 /* ========================================================= 480px ===*/
 @media (min-width: 480px) {
