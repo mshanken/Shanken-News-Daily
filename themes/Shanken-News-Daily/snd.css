@@ -20,6 +20,7 @@ label {
 	float: left;
 	text-align: inherit;
 	width: inherit;
+	background-color: none;
 }
 strong {
 	font-weight: 600;
@@ -344,12 +345,14 @@ tr.even {
 	display: block;
 	font-size: 12px;
 	line-height: 1.4;
+	background-color: none;
 }
-strong.label {
+strong.pub {
 	font-size: 16px;
 	margin-right: 6px;
 	font-weight: 600;
 	color: rgba(111,146,168,1);
+	background-color: none;
 }
 .wpcf7 ul li {
 	display: block;
