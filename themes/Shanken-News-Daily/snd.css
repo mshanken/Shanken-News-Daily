@@ -248,13 +248,13 @@ a.addthis_button_preferred_1:hover, a.addthis_button_preferred_2:hover, a.addthi
 }
 #sidebar .widget-container {padding: 10px; margin: 6px 0px;}
 #searchform input[type="search"] {
-border: none;
-left: 0;
-line-height: 1;
-padding: 5px 0 3px 8px;
-position: relative;
-width: 100%;
-z-index: 15;
+	border: none;
+	left: 0;
+	line-height: 1;
+	padding: 5px 0 3px 8px;
+	position: relative;
+	width: 100%;
+	z-index: 15;
 }
 #search-container {padding:0 10px; margin:0;}
 ul#socialicons {margin-top: 7px; padding-left: 0;}
