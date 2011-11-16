@@ -256,6 +256,30 @@ a.addthis_button_preferred_1:hover, a.addthis_button_preferred_2:hover, a.addthi
 	width: 100%;
 	z-index: 15;
 }
+#ad-desktop {
+	opacity: 0.8;
+	margin:0;
+	padding:0;
+	display: none;
+}
+#ad-mobile-landscape{
+	opacity: 0.8;
+	margin:0;
+	padding:0;
+	display: none;
+}
+#ad-mobile-port{
+	opacity: 0.8;
+	margin:0;
+	padding:0;
+	display: block;
+}
+#ad-tablet{
+	opacity: 0.8;
+	margin:0;
+	padding:0;
+	display: none;
+}
 #search-container {padding:0 10px; margin:0;}
 ul#socialicons {margin-top: 7px; padding-left: 0;}
 ul#socialicons li {display: inline; margin-right: 3px;}
@@ -567,6 +591,30 @@ td#next {
 		visibility: visible;
 		text-shadow: 0 1px 0 #fff;
 	}
+	#ad-desktop {
+		opacity: 0.8;
+		margin:0;
+		padding:0;
+		display: none;
+	}
+	#ad-tablet{
+		opacity: 0.8;
+		margin:0;
+		padding:0;
+		display: none;
+	}
+	#ad-mobile-landscape{
+		opacity: 0.8;
+		margin:0;
+		padding:0;
+		display:block;
+	}
+	#ad-mobile-port{
+	opacity: 0.8;
+	margin:0;
+	padding:0;
+	display: none;
+}
 }
 /* ========================================================= 768px ===*/
 @media (min-width: 768px) {
@@ -712,6 +760,30 @@ td#next {
 		margin: 0px 10px;
 		display: block;
 	}
+	#ad-desktop {
+		opacity: 0.8;
+		margin:0;
+		padding:0;
+		display: none;
+	}
+	#ad-tablet{
+		opacity: 0.8;
+		margin:0;
+		padding:0;
+		display: block;
+	}
+	#ad-mobile-landscape{
+		opacity: 0.8;
+		margin:0;
+		padding:0;
+		display:none;
+	}
+	#ad-mobile-port{
+	opacity: 0.8;
+	margin:0;
+	padding:0;
+	display: none;
+}
 }
 /* ========================================================= 1024 ===*/
 @media (min-width: 1024px) {
@@ -782,6 +854,30 @@ td#next {
 		margin: 0px 10px;
 		display: block;
 	}
+	#ad-desktop {
+		opacity: 0.8;
+		margin:0;
+		padding:0;
+		display: block;
+	}
+	#ad-tablet{
+		opacity: 0.8;
+		margin:0;
+		padding:0;
+		display: none;
+	}
+	#ad-mobile-landscape{
+		opacity: 0.8;
+		margin:0;
+		padding:0;
+		display:none;
+	}
+	#ad-mobile-port{
+	opacity: 0.8;
+	margin:0;
+	padding:0;
+	display: none;
+}
 }
 /* ========================================================= 1280 ===*/
 @media (min-width: 1280px) {
@@ -794,4 +890,28 @@ td#next {
 		margin: 0px 10px;
 		display: block;
 	}
+		#ad-desktop {
+		opacity: 0.8;
+		margin:0;
+		padding:0;
+		display: none;
+	}
+	#ad-tablet{
+		opacity: 0.8;
+		margin:0;
+		padding:0;
+		display: none;
+	}
+	#ad-mobile-landscape{
+		opacity: 0.8;
+		margin:0;
+		padding:0;
+		display:block;
+	}
+	#ad-mobile-port{
+	opacity: 0.8;
+	margin:0;
+	padding:0;
+	display: none;
+}
 }
