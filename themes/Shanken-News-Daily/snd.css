@@ -272,7 +272,7 @@ a.addthis_button_preferred_1:hover, a.addthis_button_preferred_2:hover, a.addthi
 	opacity: 0.8;
 	margin:0;
 	padding:0;
-	display: block;
+	display: none;
 }
 #ad-tablet{
 	opacity: 0.8;
@@ -607,13 +607,13 @@ td#next {
 		opacity: 0.8;
 		margin:0;
 		padding:0;
-		display:block;
+		display:none;
 	}
 	#ad-mobile-port{
-	opacity: 0.8;
-	margin:0;
-	padding:0;
-	display: none;
+		opacity: 0.8;
+		margin:0;
+		padding:0;
+		display: none;
 }
 }
 /* ========================================================= 768px ===*/
@@ -770,7 +770,7 @@ td#next {
 		opacity: 0.8;
 		margin:0;
 		padding:0;
-		display: block;
+		display: none;
 	}
 	#ad-mobile-landscape{
 		opacity: 0.8;
@@ -779,10 +779,10 @@ td#next {
 		display:none;
 	}
 	#ad-mobile-port{
-	opacity: 0.8;
-	margin:0;
-	padding:0;
-	display: none;
+		opacity: 0.8;
+		margin:0;
+		padding:0;
+		display: none;
 }
 }
 /* ========================================================= 1024 ===*/
@@ -858,7 +858,7 @@ td#next {
 		opacity: 0.8;
 		margin:0;
 		padding:0;
-		display: block;
+		display: none;
 	}
 	#ad-tablet{
 		opacity: 0.8;
@@ -873,10 +873,10 @@ td#next {
 		display:none;
 	}
 	#ad-mobile-port{
-	opacity: 0.8;
-	margin:0;
-	padding:0;
-	display: none;
+		opacity: 0.8;
+		margin:0;
+		padding:0;
+		display: none;
 }
 }
 /* ========================================================= 1280 ===*/
@@ -890,7 +890,7 @@ td#next {
 		margin: 0px 10px;
 		display: block;
 	}
-		#ad-desktop {
+	#ad-desktop {
 		opacity: 0.8;
 		margin:0;
 		padding:0;
@@ -906,12 +906,12 @@ td#next {
 		opacity: 0.8;
 		margin:0;
 		padding:0;
-		display:block;
+		display:none;
 	}
 	#ad-mobile-port{
-	opacity: 0.8;
-	margin:0;
-	padding:0;
-	display: none;
+		opacity: 0.8;
+		margin:0;
+		padding:0;
+		display: none;
 }
 }
