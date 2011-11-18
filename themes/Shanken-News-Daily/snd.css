@@ -493,7 +493,7 @@ td#next {
 	text-align: right;
 }
 /* ========================================================= 480px ===*/
-@media (min-width: 480px) {
+@media screen and (min-width: 480px) {
 	section.post h2 {
 		font-size: 19px;
 		font-family: 'Open Sans', 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif;
@@ -617,7 +617,7 @@ td#next {
 }
 }
 /* ========================================================= 768px ===*/
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
 	#tagline {
 		background-position: -1%;
 	}
@@ -786,7 +786,7 @@ td#next {
 }
 }
 /* ========================================================= 1024 ===*/
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
 	section.post h2 {
 		font-size: 26px;
 		font-family: 'Open Sans', 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif;
@@ -880,7 +880,7 @@ td#next {
 }
 }
 /* ========================================================= 1280 ===*/
-@media (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
 	nav.one_full {
 		margin-bottom: 18px;
 		padding: 0;
