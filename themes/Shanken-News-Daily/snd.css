@@ -272,7 +272,7 @@ a.addthis_button_preferred_1:hover, a.addthis_button_preferred_2:hover, a.addthi
 	opacity: 0.8;
 	margin:0;
 	padding:0;
-	display: none;
+	display: block;
 }
 #ad-tablet{
 	opacity: 0.8;
@@ -607,7 +607,7 @@ td#next {
 		opacity: 0.8;
 		margin:0;
 		padding:0;
-		display:none;
+		display:block;
 	}
 	#ad-mobile-port{
 		opacity: 0.8;
@@ -770,7 +770,7 @@ td#next {
 		opacity: 0.8;
 		margin:0;
 		padding:0;
-		display: none;
+		display: block;
 	}
 	#ad-mobile-landscape{
 		opacity: 0.8;
@@ -858,7 +858,7 @@ td#next {
 		opacity: 0.8;
 		margin:0;
 		padding:0;
-		display: none;
+		display: block;
 	}
 	#ad-tablet{
 		opacity: 0.8;
@@ -906,7 +906,7 @@ td#next {
 		opacity: 0.8;
 		margin:0;
 		padding:0;
-		display:none;
+		display:block;
 	}
 	#ad-mobile-port{
 		opacity: 0.8;
