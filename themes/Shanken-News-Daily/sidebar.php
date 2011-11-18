@@ -8,7 +8,7 @@
 								</div><!--/search-input-->
 							</div><!--/search-wrap-->
 		</form><!--/searchform-->
-		<div class="widget-container" id="ad-desktop">
+		<!--<div class="widget-container" id="ad-desktop">
 			<a href="http://www.winespectator.com/micro/show?id=40690" title="The 36th annual Impact Marketing Seminar - March 22, 2012"><img src="<?php bloginfo('template_url'); ?>/img/IMP-MS2011-274x220.jpg" alt="The 36th annual Impact Marketing Seminar - March 22, 2012" /></a></div>
 			
 		<div class="widget-container" id="ad-tablet">
@@ -18,7 +18,7 @@
 			<a href="http://www.winespectator.com/micro/show?id=40690" title="The 36th annual Impact Marketing Seminar - March 22, 2012"><img src="<?php bloginfo('template_url'); ?>/img/IMP-MS2011-360x200.jpg" alt="The 36th annual Impact Marketing Seminar - March 22, 2012" /></a></div>
 			
 		<div class="widget-container" id="ad-mobile-port">
-			<a href="http://www.winespectator.com/micro/show?id=40690" title="The 36th annual Impact Marketing Seminar - March 22, 2012"><img src="<?php bloginfo('template_url'); ?>/img/IMP-MS2011-200x150.jpg" alt="The 36th annual Impact Marketing Seminar - March 22, 2012" /></a></div>
+			<a href="http://www.winespectator.com/micro/show?id=40690" title="The 36th annual Impact Marketing Seminar - March 22, 2012"><img src="<?php bloginfo('template_url'); ?>/img/IMP-MS2011-200x150.jpg" alt="The 36th annual Impact Marketing Seminar - March 22, 2012" /></a></div>-->
 
 <?php
 	/* When we call the dynamic_sidebar() function, it'll spit out
