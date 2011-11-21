@@ -20,11 +20,13 @@
 	<link rel="apple-touch-icon" href="<?php bloginfo( 'template_url' ); ?>/img/apple-touch-icon.png">
 
 	<link rel="stylesheet" href="https://s3.amazonaws.com/toolkit.mshanken.com/css/elements.css">
-	<link rel='stylesheet' id='contact-form-7-css'  href='http://SHANKDNEW-ElasticL-A0CNGVQLG2YI-1454536625.us-east-1.elb.amazonaws.com/wp-content/plugins/contact-form-7/styles.css?ver=2.4.5' type='text/css' media='all' />
 	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>">
+	<link rel="stylesheet" href="http://SHANKDNEW-ElasticL-A0CNGVQLG2YI-1454536625.us-east-1.elb.amazonaws.com/wp-content/plugins/contact-form-7/styles.css">
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
 	
 	<script src="https://s3.amazonaws.com/toolkit.mshanken.com/js/modernizr.min.js"></script>
+	
+	<script src="https://s3.amazonaws.com/toolkit.mshanken.com/js/respond.min.js"></script>
 	
 	<link href="https://s3.amazonaws.com/toolkit.mshanken.com/toolkit/plugins/respond/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
     <link href="<?php bloginfo( 'template_url' ); ?>/cross-domain/respond.proxy.gif" id="respond-redirect" rel="respond-redirect" />

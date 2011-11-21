@@ -21,7 +21,6 @@ yepnope([
 	},
 	callback: {
 		'respondJS' : function(url, result, key){
-			console.info('Loaded: respondJS');
 		}
 	}
 },
