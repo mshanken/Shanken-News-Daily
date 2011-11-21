@@ -39,10 +39,6 @@
  */
 
 /**
-
-
-
-/**
  * Set the content width based on the theme's design and stylesheet.
  *
  * Used to set the width of images and content. Should be equal to the width the theme
