@@ -39,9 +39,6 @@ yepnope([
 	}
 },
 {
-	load: 'http://shankdnew-elasticl-a0cngvqlg2yi-1454536625.us-east-1.elb.amazonaws.com/wp-includes/js/l10n.js'
-},
-{
 	load : 'http://www.google-analytics.com/ga.js'
 }
 ]);
