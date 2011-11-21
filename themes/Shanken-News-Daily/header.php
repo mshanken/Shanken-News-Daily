@@ -6,7 +6,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title><?php wp_title( '|', true, 'right' );?></title>
+	<title>Shanken News Daily</title>
 	<meta name="description" content="Shanken News Daily: Exclusive news and research on the wine, spirits and beer business">
 	<meta name="author" content="M. Shanken Communications, Inc.">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
@@ -18,8 +18,8 @@
 	<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.shankennewsdaily.com/wp-includes/wlwmanifest.xml" /> 
 
 	
-	<link rel="shortcut icon" href="<?php bloginfo( 'template_url' ); ?>/img/favicon.ico">
-	<link rel="apple-touch-icon" href="<?php bloginfo( 'template_url' ); ?>/img/apple-touch-icon.png">
+	<link rel="shortcut icon" href="/wp-content/themes/Shanken-News-Daily/img/favicon.ico">
+	<link rel="apple-touch-icon" href="/wp-content/themes/Shanken-News-Daily/img/apple-touch-icon.png">
 
 
 	<link rel="stylesheet" href="/wp-content/themes/Shanken-News-Daily/style.css">
@@ -46,7 +46,7 @@
 					<nav class="one_full"><!-- nav -->
 						<span id="date"><?php echo date('F j, Y'); ?></span>
 							<ul>
-								<li<?php if ( is_home()){echo " class=\"current_page_item\"";}?>><a href="<?php bloginfo('url') ?>" title="NEWS HOME">NEWS</a></li>
+								<li<?php if ( is_home()){echo " class=\"current_page_item\"";}?>><a href="/" title="NEWS HOME">NEWS</a></li>
 					<?php wp_list_pages('exclude=579&title_li='); ?>
 								<li id="subpage"><a href="http://lp.shankennewsdaily.com/email?source=snd_website" title="Subscribe to Shanken News Daily">SUBSCRIBE to SND</a></li>
 							</ul>

@@ -1,3 +1,15 @@
+/*-----------
+Theme Name: Shanken News Daily
+Theme URI: http://shankennewsdaily.com
+Description: A simple theme for Shanken News Daily intended to mimic the look of the existing newsletter, but better.
+Version: 1.3
+Author: steve
+Author URI: 
+Tags: clean, light, subtle gradients, news, informational
+Modified:
+Modified Date: 11/18/2011
+-----------*/
+
 /*
 
 1) Reset
@@ -1553,17 +1565,6 @@ table th {
 	transition:all .2s ease-out;
 }
 
-/*-----------
-Theme Name: Shanken News Daily
-Theme URI: http://shankennewsdaily.com
-Description: A simple theme for Shanken News Daily intended to mimic the look of the existing newsletter, but better.
-Version: 1.3
-Author: steve
-Author URI: 
-Tags: clean, light, subtle gradients, news, informational
-Modified:
-Modified Date: 11/18/2011
------------*/
 
 /* ========================================================= Colors ===*/
 /*---Navy:#00457c;rgba(0,70,124,1);--LightBlue:#6f92a8;rgba(111,146,168,1);
