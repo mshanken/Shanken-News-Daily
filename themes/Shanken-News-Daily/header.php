@@ -23,7 +23,7 @@
 
 	<link rel="stylesheet" href="https://s3.amazonaws.com/toolkit.mshanken.com/css/elements.css">
 	<link rel="stylesheet" href="http://shankennewsdaily.com/wp-content/themes/Shanken-News-Daily/style.css">
-	<link rel="stylesheet" href="http://shankennewsdaily.com/wp-content/plugins/contact-form-7/styles.css">
+	<!-- <link rel="stylesheet" href="http://shankennewsdaily.com/wp-content/plugins/contact-form-7/styles.css"> -->
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
 	
 	<script src="https://s3.amazonaws.com/toolkit.mshanken.com/js/modernizr.min.js"></script>
