@@ -49,8 +49,8 @@
 		<div class="widget-container">
 			<h3 class="widget-title">FOLLOW US</a></h3>
 				<ul id="socialicons">
-					<li><a href="http://twitter.com/#!/ShankenNews"><img src="/wp-content/themes/Shanken-News-Daily/img/twitter.png" alt="Shanken News Daily on Twitter" title="Shanken News Daily on Twitter"/></a></li>
-					<li><a href="http://www.facebook.com/#!/pages/Shanken-News-Daily/187376324643407"><img src="/wp-content/themes/Shanken-News-Daily/img/facebook.png" alt="Shanken News Daily on Facebook" title="Shanken News Daily on Facebook"/></a></li>
+					<li><a href="http://twitter.com/#!/ShankenNews"><img src="http://www.shankennewsdaily.com/wp-content/themes/Shanken-News-Daily/img/twitter.png" alt="Shanken News Daily on Twitter" title="Shanken News Daily on Twitter"/></a></li>
+					<li><a href="http://www.facebook.com/#!/pages/Shanken-News-Daily/187376324643407"><img src="http://www.shankennewsdaily.com/wp-content/themes/Shanken-News-Daily/img/facebook.png" alt="Shanken News Daily on Facebook" title="Shanken News Daily on Facebook"/></a></li>
 				</ul>
 		</div><!--/widget-container-->
 <?php

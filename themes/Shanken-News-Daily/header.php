@@ -34,7 +34,7 @@
 	<div class="container"><!-- start container -->
 		<div class="page">
 			<div class="content">
-				<header><!-- start header -->
+				<header class="clearfix"><!-- start header -->
 					<div class="one_third">
 						<a href="<?php echo home_url( '/' ); ?>" alt="Shanken News Daily" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
 						<img id="logoimg" src="/wp-content/themes/Shanken-News-Daily/img/drinksdaily-logo2.png" alt="Shanken News Daily" title="Shanken News Daily"/></a>
@@ -42,7 +42,7 @@
 					<div class="two_third" id="tagline">
 					<?php bloginfo( 'description' ); ?>
 					</div>
-					
+					<div class="clearfix"></div>
 					<nav class="one_full"><!-- nav -->
 						<span id="date"><?php echo date('F j, Y'); ?></span>
 							<ul>
@@ -54,4 +54,4 @@
 
 				</header><!-- end header -->
 
-<div class="clear"></div>
+<div class="clearfix"></div>

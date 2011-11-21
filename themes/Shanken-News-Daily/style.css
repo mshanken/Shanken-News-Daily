@@ -24,8 +24,8 @@ Modified Date: 11/18/2011
 	(http://meyerweb.com/eric/tools/css/reset) 
 */
 html, body {
-  margin: 0;
-  padding: 0;
+  	margin: 0;
+  	padding: 0;
 	height: 100%;
 }
 h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,cite,code,del,dfn,em,img,q,s,samp,small,strike,strong,sub,sup,tt,var,dd,dl,dt,li,ol,ul,fieldset,form,label,legend,button,table,caption,tbody,tfoot,thead,tr,th,td {
@@ -1415,7 +1415,7 @@ table th {
 .container {
 	margin: 0 auto;
 	padding: 0 10px;
-	width: 300px;
+	width: 984px;
 }
 .content{
 	padding: 30px;
@@ -1435,81 +1435,31 @@ table th {
 .one_full {
 	float: left;
 	margin: 0 10px 10px;
-	max-width: 220px;
+	width: 924px;
 	width: 100%;
+
 }
-/* -----------
- -- 0.75% --
------------ */
-.three_quarter {
-	float: left;
-	margin: 0 10px 10px;
-	max-width: 220px;
-	width: 100%;
-}
+
 /* -----------
  -- 0.66% --
 ----------- */
 .two_third {
 	float: left;
 	margin: 0 10px 10px;
-	max-width: 220px;
-	width: 100%;
+	width: 610px;
+
 }
-/* -----------
- -- 0.50% --
------------ */
-.one_half {
-	float: left;
-	margin: 0 10px 10px;
-	max-width: 220px;
-	width: 100%;
-}
-/* -----------
- -- 0.40% --
------------ */
-.two_fifth {
-	float: left;
-	margin: 0 10px 10px;
-	max-width: 220px;
-	width: 100%;
-}
+
 /* -----------
  -- 0.33% --
 ----------- */
 .one_third { 
 	float: left;
 	margin: 0 10px 10px;
-	max-width: 220px;
-	width: 100%;
+	width: 294px;
+
 }
-/* -----------
- -- 0.25% --
------------ */
-.one_quarter {
-	float: left;
-	margin: 0 10px 10px;
-	max-width: 220px;
-	width: 100%;
-}
-/* -----------
- -- 0.20% --
------------ */
-.one_fifth {
-	float: left;
-	margin: 0 10px 10px;
-	max-width: 220px;
-	width: 100%;
-}
-/* -----------
- -- 0.80% --
------------ */
-.four_fifth {
-	float: left;
-	margin: 0 10px 10px;
-	max-width: 220px;
-	width: 100%;
-}
+
 /* ========================================================= 480px ===*/
 @media screen and (min-width: 480px) {
 	.one_full {max-width: 380px;}
@@ -1578,9 +1528,7 @@ body {
 	color: #444;
 	font-family: 'Open Sans', 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif;
 }
-.one_third {
-	margin: 0 10px 0;
-}
+
 label {
 	color: #404040;
 	display: block;
@@ -1593,6 +1541,7 @@ label {
 }
 strong {
 	font-weight: 600;
+	color: #6f92a8;
 	color: rgba(111,146,168,1);
 }	
 em {
@@ -1616,15 +1565,16 @@ blockquote {
 	line-height: inherit;
 	margin: 0 0 8px 8px;
 }
-a:link {color:rgba(166,125,75,0.9); text-decoration: none;} /*unvisited*/
-a:visited {color:rgba(166,125,75,0.9); text-decoration: none;} /*visited*/
-a:hover {color:rgba(111,146,168,1); text-decoration: none;} /*mouse over*/
+a:link {color:#a67d4b;color:rgba(166,125,75,0.9); text-decoration: none;} /*unvisited*/
+a:visited {color:#a67d4b;color:rgba(166,125,75,0.9); text-decoration: none;} /*visited*/
+a:hover {color:#6f92a8;color:rgba(111,146,168,1); text-decoration: none;} /*mouse over*/
 a:active {color:#444; text-decoration: none;} /*selected*/
 h1, h2, h3, h4, h5, h6 {
 	line-height: 1.2;
 	font-family: 'Open Sans', 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif;
 	letter-spacing: normal; 
 	font-weight: 600; 
+	color:#00457c;
 	color: rgba(0,70,124,0.8); 
 	text-transform: normal;
 	margin: 0 0 8px;
@@ -1651,8 +1601,9 @@ img.alignleft {float: left; padding: 0; margin: 0px 8px 0px 0px; display: inline
 	font-weight: 300;
 	min-height: inherit;
 	letter-spacing: normal;
+	color:#EDF2F6;
 	color:rgba(0,70,124,0.6);
-	margin-bottom: 10px;
+	margin-bottom: 0px;
 	line-height: 1.2;
 	text-align: left;
 	background-image: none;
@@ -1666,7 +1617,7 @@ nav {
 	font-size: 18px;
 	font-weight: normal;
 	font-family: 'Open Sans', 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif;
-	background-color: rgba(237,242,246,1);
+	background-color: #EDF2F6;
    	background-image: url(/wp-content/themes/Shanken-News-Daily/img/noise.png);
 	-webkit-border-radius: none;
 	-moz-border-radius: none;
@@ -1674,7 +1625,6 @@ nav {
 	box-shadow: 0px -1px 2px rgba(148,148,148,0.2) inset;
 }
 nav.one_full {
-	margin-bottom: 18px;
 	padding: 0;
 	border: 1px solid rgba(111,146,168,0.1);
 }
@@ -1690,7 +1640,7 @@ nav ul li {
 }
 nav li a:hover, .current_page_item a, #subpage a:hover {
     background: #fff;
-    color:rgba(111,146,168,1);
+    color:#6f92a8;
     border-left: none;
     text-decoration: none;
     text-shadow: none;
@@ -1698,9 +1648,9 @@ nav li a:hover, .current_page_item a, #subpage a:hover {
     box-shadow: none;
 }
 nav li a { 
-    color:rgba(166,125,75,1);
+    color:#a67d4b;
     text-shadow: none;
-    background-color: rgba(244,244,244,1);
+    background-color: #F4F4F4;
     border-left: none;
     text-decoration: none;
     text-transform: uppercase;
@@ -1784,10 +1734,11 @@ a.addthis_button_preferred_1, a.addthis_button_preferred_2, a.addthis_button_pre
 a.addthis_button_preferred_1:hover, a.addthis_button_preferred_2:hover, a.addthis_button_preferred_3:hover, a.addthis_button_preferred_4:hover, a.addthis_button_compact:hover {
 	opacity: 0.8;
 }
+
 #sidebar {
 	font-family: 'Open Sans', 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif;
 	color: #a0a0a0;
-	background-color: rgba(250,250,250,1);
+	background-color: #FAFAFA;
 	background: -moz-linear-gradient(top, rgba(250,250,250,1) 50%, rgba(255,255,255,0) 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(50%,rgba(250,250,250,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
 	background: -webkit-linear-gradient(top, rgba(250,250,250,1) 50%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
@@ -1908,7 +1859,7 @@ tr.even {
 	margin-top: 22px;
 	padding: 4px 0 14px 0;
 	color: #a0a0a0;
-	background-color: rgba(250,250,250,1);
+	background-color: #FAFAFA;
 	background: -moz-linear-gradient(top, rgba(250,250,250,1) 50%, rgba(255,255,255,0) 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(50%,rgba(250,250,250,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
 	background: -webkit-linear-gradient(top, rgba(250,250,250,1) 50%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
@@ -1944,7 +1895,7 @@ strong.pub {
 	font-size: 16px;
 	margin-right: 6px;
 	font-weight: 600;
-	color: rgba(111,146,168,1);
+	color: #6f92a8;
 	background-color: none;
 }
 .wpcf7 ul li {
@@ -2077,8 +2028,7 @@ td#next {
 		font-weight: 300;
 		min-height: inherit;
 		letter-spacing: normal;
-		color:rgba(0,70,124,0.6);
-		margin-bottom: 10px;
+		margin-bottom: 0px;
 		line-height: 1.2;
 		text-align: left;
 		background-image: none;
@@ -2222,7 +2172,6 @@ td#next {
 		font-size: 14px;
 		font-weight: normal;
 		font-family: 'Open Sans', 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif;
-		background-color: rgba(237,242,246,1);
 	   	background-image: url(/wp-content/themes/Shanken-News-Daily/img/noise.png);
 		-webkit-border-radius: 4px;
 		-moz-border-radius: 4px;
@@ -2241,7 +2190,6 @@ td#next {
 	}
 	nav li a:hover, .current_page_item a, #subpage a:hover {
 	    background: #fff;
-	    color:rgba(111,146,168,1);
 	    border-left: 1px solid rgba(128,128,128,0.3);
 	    text-decoration: none;
 	    text-shadow: none;
@@ -2249,9 +2197,7 @@ td#next {
 	    box-shadow: none;
 	}
 	nav li a { 
-	    color:rgba(166,125,75,1);
 	    text-shadow: none;
-	    background-color: rgba(244,244,244,1);
 	    border-left: 1px solid rgba(244,244,244,1);
 	    text-decoration: none;
 	    text-transform: uppercase;
@@ -2278,7 +2224,6 @@ td#next {
 		font-weight: 300;
 		min-height: 120px;
 		letter-spacing: normal;
-		color:rgba(0,70,124,0.6);
 		margin-bottom: 0;
 		line-height: 1.2;
 		text-align: left;
