@@ -9,16 +9,16 @@
 							</div><!--/search-wrap-->
 		</form><!--/searchform-->
 		<!--<div class="widget-container" id="ad-desktop">
-			<a href="http://www.winespectator.com/micro/show?id=40690" title="The 36th annual Impact Marketing Seminar - March 22, 2012"><img src="http://shankennewsdaily.com/img/IMP-MS2011-274x220.jpg" alt="The 36th annual Impact Marketing Seminar - March 22, 2012" /></a></div>
+			<a href="http://www.winespectator.com/micro/show?id=40690" title="The 36th annual Impact Marketing Seminar - March 22, 2012"><img src="/wp-content/themes/Shanken-News-Daily/img/IMP-MS2011-274x220.jpg" alt="The 36th annual Impact Marketing Seminar - March 22, 2012" /></a></div>
 			
 		<div class="widget-container" id="ad-tablet">
-			<a href="http://www.winespectator.com/micro/show?id=40690" title="The 36th annual Impact Marketing Seminar - March 22, 2012"><img src="http://shankennewsdaily.com/img/IMP-MS2011-189x150.jpg" alt="The 36th annual Impact Marketing Seminar - March 22, 2012" /></a></div>
+			<a href="http://www.winespectator.com/micro/show?id=40690" title="The 36th annual Impact Marketing Seminar - March 22, 2012"><img src="/wp-content/themes/Shanken-News-Daily/img/IMP-MS2011-189x150.jpg" alt="The 36th annual Impact Marketing Seminar - March 22, 2012" /></a></div>
 			
 		<div class="widget-container" id="ad-mobile-landscape">
-			<a href="http://www.winespectator.com/micro/show?id=40690" title="The 36th annual Impact Marketing Seminar - March 22, 2012"><img src="http://shankennewsdaily.com/img/IMP-MS2011-360x200.jpg" alt="The 36th annual Impact Marketing Seminar - March 22, 2012" /></a></div>
+			<a href="http://www.winespectator.com/micro/show?id=40690" title="The 36th annual Impact Marketing Seminar - March 22, 2012"><img src="/wp-content/themes/Shanken-News-Daily/img/IMP-MS2011-360x200.jpg" alt="The 36th annual Impact Marketing Seminar - March 22, 2012" /></a></div>
 			
 		<div class="widget-container" id="ad-mobile-port">
-			<a href="http://www.winespectator.com/micro/show?id=40690" title="The 36th annual Impact Marketing Seminar - March 22, 2012"><img src="http://shankennewsdaily.com/img/IMP-MS2011-200x150.jpg" alt="The 36th annual Impact Marketing Seminar - March 22, 2012" /></a></div>-->
+			<a href="http://www.winespectator.com/micro/show?id=40690" title="The 36th annual Impact Marketing Seminar - March 22, 2012"><img src="/wp-content/themes/Shanken-News-Daily/img/IMP-MS2011-200x150.jpg" alt="The 36th annual Impact Marketing Seminar - March 22, 2012" /></a></div>-->
 
 <?php
 	/* When we call the dynamic_sidebar() function, it'll spit out
@@ -49,8 +49,8 @@
 		<div class="widget-container">
 			<h3 class="widget-title">FOLLOW US</a></h3>
 				<ul id="socialicons">
-					<li><a href="http://twitter.com/#!/ShankenNews"><img src="http://shankennewsdaily.com/img/twitter.png" alt="Shanken News Daily on Twitter" title="Shanken News Daily on Twitter"/></a></li>
-					<li><a href="http://www.facebook.com/#!/pages/Shanken-News-Daily/187376324643407"><img src="http://shankennewsdaily.com/img/facebook.png" alt="Shanken News Daily on Facebook" title="Shanken News Daily on Facebook"/></a></li>
+					<li><a href="http://twitter.com/#!/ShankenNews"><img src="/wp-content/themes/Shanken-News-Daily/img/twitter.png" alt="Shanken News Daily on Twitter" title="Shanken News Daily on Twitter"/></a></li>
+					<li><a href="http://www.facebook.com/#!/pages/Shanken-News-Daily/187376324643407"><img src="/wp-content/themes/Shanken-News-Daily/img/facebook.png" alt="Shanken News Daily on Facebook" title="Shanken News Daily on Facebook"/></a></li>
 				</ul>
 		</div><!--/widget-container-->
 <?php

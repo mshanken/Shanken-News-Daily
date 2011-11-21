@@ -1666,7 +1666,7 @@ nav {
 	font-weight: normal;
 	font-family: 'Open Sans', 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif;
 	background-color: rgba(237,242,246,1);
-   	background-image: url(img/noise.png);
+   	background-image: url(/wp-content/themes/Shanken-News-Daily/img/noise.png);
 	-webkit-border-radius: none;
 	-moz-border-radius: none;
 	border-radius: none;
@@ -1893,7 +1893,7 @@ table th {
 }
 tr.even {
 	background-color: rgba(237,242,246,1);
-	background-image: url(img/noise.png);
+	background-image: url(/wp-content/themes/Shanken-News-Daily/img/noise.png);
 }
 /* ========================================================= Footer stuff ===*/
 #footer .widget-container {
@@ -2104,37 +2104,37 @@ td#next {
 		display: block;
 	}
 	fieldset#ws {
-		background-image: url(img/wsbg.jpg);
+		background-image: url(/wp-content/themes/Shanken-News-Daily/img/wsbg.jpg);
 		background-repeat: no-repeat;
 		background-position: 190% 0%;
 	}	
 	fieldset#ca {
-		background-image: url(img/cabg.jpg);
+		background-image: url(/wp-content/themes/Shanken-News-Daily/img/cabg.jpg);
 		background-repeat: no-repeat;
 		background-position: 190% 0%;
 	}	
 	fieldset#fa {
-		background-image: url(img/fabg.jpg);
+		background-image: url(/wp-content/themes/Shanken-News-Daily/img/fabg.jpg);
 		background-repeat: no-repeat;
 		background-position: 190% 0%;
 	}	
 	fieldset#mw {
-		background-image: url(img/mwbg.jpg);
+		background-image: url(/wp-content/themes/Shanken-News-Daily/img/mwbg.jpg);
 		background-repeat: no-repeat;
 		background-position: 190% 0%;
 	}
 	fieldset#ma {
-		background-image: url(img/wabg.jpg);
+		background-image: url(/wp-content/themes/Shanken-News-Daily/img/wabg.jpg);
 		background-repeat: no-repeat;
 		background-position: 190% 0%;
 	}	
 	fieldset#im {
-		background-image: url(img/imbg.jpg);
+		background-image: url(/wp-content/themes/Shanken-News-Daily/img/imbg.jpg);
 		background-repeat: no-repeat;
 		background-position: 190% 0%;
 	}	
 	fieldset#imdb {
-		background-image: url(img/imdbbg.jpg);
+		background-image: url(/wp-content/themes/Shanken-News-Daily/img/imdbbg.jpg);
 		background-repeat: no-repeat;
 		background-position: 190% 4%;
 	}	
@@ -2222,7 +2222,7 @@ td#next {
 		font-weight: normal;
 		font-family: 'Open Sans', 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif;
 		background-color: rgba(237,242,246,1);
-	   	background-image: url(img/noise.png);
+	   	background-image: url(/wp-content/themes/Shanken-News-Daily/img/noise.png);
 		-webkit-border-radius: 4px;
 		-moz-border-radius: 4px;
 		border-radius: 4px;
@@ -2281,7 +2281,7 @@ td#next {
 		margin-bottom: 0;
 		line-height: 1.2;
 		text-align: left;
-		background-image: url(img/tagbg.jpg);
+		background-image: url(/wp-content/themes/Shanken-News-Daily/img/tagbg.jpg);
 		background-attachment: inherit;
 		background-repeat:repeat-x;
 	}
@@ -2290,37 +2290,37 @@ td#next {
 		display: none;
 	}
 	fieldset#ws {
-		background-image: url(img/wsbg.jpg);
+		background-image: url(/wp-content/themes/Shanken-News-Daily/img/wsbg.jpg);
 		background-repeat: no-repeat;
 		background-position: 150% 4%;
 	}	
 	fieldset#ca {
-		background-image: url(img/cabg.jpg);
+		background-image: url(/wp-content/themes/Shanken-News-Daily/img/cabg.jpg);
 		background-repeat: no-repeat;
 		background-position: 150% 4%;
 	}	
 	fieldset#fa {
-		background-image: url(img/fabg.jpg);
+		background-image: url(/wp-content/themes/Shanken-News-Daily/img/fabg.jpg);
 		background-repeat: no-repeat;
 		background-position: 150% 4%;
 	}	
 	fieldset#mw {
-		background-image: url(img/mwbg.jpg);
+		background-image: url(/wp-content/themes/Shanken-News-Daily/img/mwbg.jpg);
 		background-repeat: no-repeat;
 		background-position: 150% 4%;
 	}
 	fieldset#ma {
-		background-image: url(img/wabg.jpg);
+		background-image: url(/wp-content/themes/Shanken-News-Daily/img/wabg.jpg);
 		background-repeat: no-repeat;
 		background-position: 150% 4%;
 	}	
 	fieldset#im {
-		background-image: url(img/imbg.jpg);
+		background-image: url(/wp-content/themes/Shanken-News-Daily/img/imbg.jpg);
 		background-repeat: no-repeat;
 		background-position: 150% 4%;
 	}	
 	fieldset#imdb {
-		background-image: url(img/imdbbg.jpg);
+		background-image: url(/wp-content/themes/Shanken-News-Daily/img/imdbbg.jpg);
 		background-repeat: no-repeat;
 		background-position: 150% 4%;
 	}
@@ -2384,37 +2384,37 @@ td#next {
 		text-shadow: 0 1px 0 rgba(250,250,250,1);
 	}
 	fieldset#ws {
-		background-image: url(img/wsbg.jpg);
+		background-image: url(/wp-content/themes/Shanken-News-Daily/img/wsbg.jpg);
 		background-repeat: no-repeat;
 		background-position: 107% 4%;
 	}	
 	fieldset#ca {
-		background-image: url(img/cabg.jpg);
+		background-image: url(/wp-content/themes/Shanken-News-Daily/img/cabg.jpg);
 		background-repeat: no-repeat;
 		background-position: 107% 4%;
 	}	
 	fieldset#fa {
-		background-image: url(img/fabg.jpg);
+		background-image: url(/wp-content/themes/Shanken-News-Daily/img/fabg.jpg);
 		background-repeat: no-repeat;
 		background-position: 107% 4%;
 	}	
 	fieldset#mw {
-		background-image: url(img/mwbg.jpg);
+		background-image: url(/wp-content/themes/Shanken-News-Daily/img/mwbg.jpg);
 		background-repeat: no-repeat;
 		background-position: 107% 4%;
 	}
 	fieldset#ma {
-		background-image: url(img/wabg.jpg);
+		background-image: url(/wp-content/themes/Shanken-News-Daily/img/wabg.jpg);
 		background-repeat: no-repeat;
 		background-position: 107% 4%;
 	}	
 	fieldset#im {
-		background-image: url(img/imbg.jpg);
+		background-image: url(/wp-content/themes/Shanken-News-Daily/img/imbg.jpg);
 		background-repeat: no-repeat;
 		background-position: 107% 4%;
 	}	
 	fieldset#imdb {
-		background-image: url(img/imdbbg.jpg);
+		background-image: url(/wp-content/themes/Shanken-News-Daily/img/imdbbg.jpg);
 		background-repeat: no-repeat;
 		background-position: 107% 4%;
 	}
