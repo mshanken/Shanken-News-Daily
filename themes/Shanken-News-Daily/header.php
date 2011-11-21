@@ -14,7 +14,7 @@
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 	<link rel="alternate" type="application/rss+xml" title="Shanken News Daily &raquo; Feed" href="http://www.shankennewsdaily.com/index.php/feed/" />
 	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.shankennewsdaily.com/xmlrpc.php?rsd" />
-		<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.shankennewsdaily.com/wp-includes/wlwmanifest.xml" /> 
+	<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.shankennewsdaily.com/wp-includes/wlwmanifest.xml" /> 
 	
 	<link rel="shortcut icon" href="<?php bloginfo( 'template_url' ); ?>/img/favicon.ico">
 	<link rel="apple-touch-icon" href="<?php bloginfo( 'template_url' ); ?>/img/apple-touch-icon.png">
@@ -26,11 +26,9 @@
 	
 	<script src="https://s3.amazonaws.com/toolkit.mshanken.com/js/modernizr.min.js"></script>
 	
-	<script src="https://s3.amazonaws.com/toolkit.mshanken.com/js/respond.min.js"></script>
-	
 	<link href="https://s3.amazonaws.com/toolkit.mshanken.com/toolkit/plugins/respond/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
-    <link href="<?php bloginfo( 'template_url' ); ?>/cross-domain/respond.proxy.gif" id="respond-redirect" rel="respond-redirect" />
-    <script src="<?php bloginfo( 'template_url' ); ?>/cross-domain/respond.proxy.js"></script>
+    <link href="http://shankennewsdaily.com/wp-content/themes/Shanken-News-Daily/cross-domain/respond.proxy.gif" id="respond-redirect" rel="respond-redirect" />
+    <script src="http://shankennewsdaily.com/wp-content/themes/Shanken-News-Daily/cross-domain/respond.proxy.js"></script>
 </head>
 
 <body <?php body_class(); ?>>
