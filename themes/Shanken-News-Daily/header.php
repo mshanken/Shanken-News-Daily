@@ -40,7 +40,7 @@
 				<header><!-- start header -->
 					<div class="one_third">
 						<a href="<?php echo home_url( '/' ); ?>" alt="Shanken News Daily" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
-						<img id="logoimg" src="<?php bloginfo('template_url'); ?>/img/drinksdaily-logo2.png" alt="Shanken News Daily" title="Shanken News Daily"/></a>
+						<img id="logoimg" src="http://shankennewsdaily.com/img/drinksdaily-logo2.png" alt="Shanken News Daily" title="Shanken News Daily"/></a>
 					</div>
 					<div class="two_third" id="tagline">
 					<?php bloginfo( 'description' ); ?>

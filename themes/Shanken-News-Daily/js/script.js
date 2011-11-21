@@ -3,14 +3,15 @@ yepnope.addPrefix('amazon', function(resourceObj) {
 	resourceObj.url = 'https://s3.amazonaws.com/toolkit.mshanken.com/' + resourceObj.url;
 	return resourceObj;
 });
-var _gaq = [['_setAccount','UA-23484466-5'],['_trackPageview']];
+var _gaq = [['_setAccount','UA-23484466-1'],['_trackPageview']];
 yepnope([
 {
 	load: '//ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js', // Jquery
 	complete: function () {
 		if (!window.jQuery) {
 			yepnope('amazon!toolkit/js/jquery.min.js');
-		}
+		};
+		$('tr:even').addClass('even');
 	}
 },
 {
@@ -20,15 +21,14 @@ yepnope([
 	}
 },
 {
-	test: document.getElementById('fb'), // Fancybox
+	test: document.getElementsByClassName('wpcf7').length,
 	yep: {
-		'MousewheelJS': 'amazon!plugins/fancybox/jquery.mousewheel-3.0.4.pack.js',
-		'FancyboxJS': 'amazon!plugins/fancybox/jquery.fancybox-1.3.4.pack.js',
-		'FancyboxCSS': 'amazon!plugins/fancybox/jquery.fancybox-1.3.4.css'
+		'contactFormJS': 'http://shankennewsdaily.com/wp-content/plugins/contact-form-7/jquery.form.js',
+		'contactScriptsJS': 'http://shankennewsdaily.com/wp-content/plugins/contact-form-7/scripts.js'
 	},
 	callback: {
-		'FancyboxJS' : function(url, result, key){
-			$("a#fb").fancybox();
+		'contactFormJS' : function(url, result, key){
+			console.info('Mother Liken was loaded');
 		}
 	}
 },
