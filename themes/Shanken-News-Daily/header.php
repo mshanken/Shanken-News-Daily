@@ -1,40 +1,34 @@
 <!doctype html>
-<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
-<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
-<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
-<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html <?php language_attributes(); ?> class="no-js"> <!--<![endif]-->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]> <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>" />
+	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	
 	<title><?php wp_title( '|', true, 'right' );?></title>
+	<meta name="description" content="Shanken News Daily: Exclusive news and research on the wine, spirits and beer business">
+	<meta name="author" content="M. Shanken Communications, Inc.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 	
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-	<meta name="google-site-verification" content="1dujorfLxBn9bxsL2tI-GQ-9A9kwxQj5QaLVAWnP8Ac" />
-	<meta name="google-site-verification" content="gm0xsPL2pF96o9vlfzKV1MDNDMOh6bUixNkNyN_0_zE" />
+	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+	<link rel="alternate" type="application/rss+xml" title="Shanken News Daily &raquo; Feed" href="http://www.shankennewsdaily.com/index.php/feed/" />
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.shankennewsdaily.com/xmlrpc.php?rsd" />
+		<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.shankennewsdaily.com/wp-includes/wlwmanifest.xml" /> 
 	
 	<link rel="shortcut icon" href="<?php bloginfo( 'template_url' ); ?>/img/favicon.ico">
 	<link rel="apple-touch-icon" href="<?php bloginfo( 'template_url' ); ?>/img/apple-touch-icon.png">
+
 	<link rel="stylesheet" href="https://s3.amazonaws.com/toolkit.mshanken.com/css/elements.css">
-	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
+	<link rel='stylesheet' id='contact-form-7-css'  href='http://SHANKDNEW-ElasticL-A0CNGVQLG2YI-1454536625.us-east-1.elb.amazonaws.com/wp-content/plugins/contact-form-7/styles.css?ver=2.4.5' type='text/css' media='all' />
 	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>">
-	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-
-	<?php
-	/* We add some JavaScript to pages with the comment form
-	 * to support sites with threaded comments (when in use).
-	 */
-	if ( is_singular() && get_option( 'thread_comments' ) )
-		wp_enqueue_script( 'comment-reply' );
-
-	/* Always have wp_head() just before the closing </head>
-	 * tag of your theme, or you will break many plugins, which
-	 * generally use this hook to add elements to <head> such
-	 * as styles, scripts, and meta tags.
-	 */
-	wp_head();
-?>
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
+	
+	<script src="https://s3.amazonaws.com/toolkit.mshanken.com/js/modernizr.min.js"></script>
+	
+	<link href="https://s3.amazonaws.com/toolkit.mshanken.com/toolkit/plugins/respond/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
+    <link href="<?php bloginfo( 'template_url' ); ?>/cross-domain/respond.proxy.gif" id="respond-redirect" rel="respond-redirect" />
+    <script src="<?php bloginfo( 'template_url' ); ?>/cross-domain/respond.proxy.js"></script>
 </head>
 
 <body <?php body_class(); ?>>
