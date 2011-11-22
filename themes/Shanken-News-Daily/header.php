@@ -6,7 +6,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>Shanken News Daily</title>
+	<title>Shanken News Daily: Exclusive news and research on the wine, spirits and beer business</title>
 	<meta name="description" content="Shanken News Daily: Exclusive news and research on the wine, spirits and beer business">
 	<meta name="author" content="M. Shanken Communications, Inc.">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
@@ -40,9 +40,8 @@
 						<img id="logoimg" src="/wp-content/themes/Shanken-News-Daily/img/drinksdaily-logo2.png" alt="Shanken News Daily" title="Shanken News Daily"/></a>
 					</div>
 					<div class="two_third" id="tagline">
-					<?php bloginfo( 'description' ); ?>
+					<h2><?php bloginfo( 'description' ); ?></h2>
 					</div>
-					<div class="clearfix"></div>
 					<nav class="one_full"><!-- nav -->
 						<span id="date"><?php echo date('F j, Y'); ?></span>
 							<ul>

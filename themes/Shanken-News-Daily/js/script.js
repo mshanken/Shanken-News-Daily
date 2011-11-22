@@ -25,11 +25,6 @@ yepnope([
 	yep: {
 		'contactFormJS': 'http://shankennewsdaily.com/wp-content/plugins/contact-form-7/jquery.form.js',
 		'contactScriptsJS': 'http://shankennewsdaily.com/wp-content/plugins/contact-form-7/scripts.js'
-	},
-	callback: {
-		'contactFormJS' : function(url, result, key){
-			console.info('Mother Liken was loaded');
-		}
 	}
 },
 {

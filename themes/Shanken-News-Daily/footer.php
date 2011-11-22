@@ -8,7 +8,28 @@
 	</div><!--/page-->
 </div><!-- end container -->
 
-<!--<script src="/wp-content/themes/Shanken-News-Daily/js/script.js"></script>-->
+<script src="/wp-content/themes/Shanken-News-Daily/js/script.js"></script>
+<!-- SiteCatalyst code version: H.20.3
+Copyright 1997-2009 Omniture, Inc. More info available at
+http://www.omniture.com -->
+<script language="JavaScript" type="text/javascript" src="//www.winespectator.com/js/library/s_code_snd.js"></script>
 
+<script language="JavaScript" type="text/javascript"><!--
+s.pageName="<?php the_title(); ?>"
+s.channel="SND"
+s.prop1=""
+s.prop2=""
+s.prop3=""
+s.prop4=""
+s.prop5=""
+s.prop14=""
+s.eVar1=""
+s.campaign=""
+s.events=""
+s.products=""
+s.purchaseID=""
+//************* DO NOT ALTER ANYTHING BELOW THIS LINE ! ************
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<!-- End SiteCatalyst code version: H.20.3 -->
 </body>
 </html>
