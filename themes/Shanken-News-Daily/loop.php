@@ -26,7 +26,7 @@
 	 */ ?>
 <?php while ( have_posts() ) : the_post(); ?>
 
-<section class="post">
+<section class="post clearfix">
 	<?php /* How to display posts in the Gallery category. */ ?>
 
 	<?php if ( in_category( _x('gallery', 'gallery category slug', 'twentyten') ) ) : ?>

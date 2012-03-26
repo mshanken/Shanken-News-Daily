@@ -9,7 +9,7 @@
 	<title>Shanken News Daily: Exclusive news and research on the wine, spirits and beer business</title>
 	<meta name="description" content="Shanken News Daily: Exclusive news and research on the wine, spirits and beer business">
 	<meta name="author" content="M. Shanken Communications, Inc.">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
 
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
