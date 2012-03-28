@@ -61,7 +61,7 @@ Template Name: Publication Order Form Page
 <p><span class="wpcf7-form-control-wrap ma-for1"><span id="ma-for1" class="wpcf7-checkbox"><span class="wpcf7-list-item"><label><input type="checkbox" name="ma-for1[]" value="$40.00 1 year Foreign - 4 issues" />&nbsp;<span class="wpcf7-list-item-label">$40.00 1 year Foreign - 4 issues</span></label></span></span></span></p> 
 </fieldset> 
 <fieldset id="im"> 
-<legend><strong class="label">Impact</strong>Global News and research for the drinks executive</legend> 
+<legend><strong class="label">Shanken's Impact Newsletter</strong>Global News and research for the drinks executive</legend> 
 <p><span class="wpcf7-form-control-wrap im-uscan1"><span id="im-uscan1" class="wpcf7-checkbox"><span class="wpcf7-list-item"><label><input type="checkbox" name="im-uscan1[]" value="$595.00 1 year US/Canada - 16 issues" />&nbsp;<span class="wpcf7-list-item-label">$595.00 1 year US/Canada - 16 issues</span></label></span></span></span></p> 
 <p><span class="wpcf7-form-control-wrap im-for1"><span id="im-for1" class="wpcf7-checkbox"><span class="wpcf7-list-item"><label><input type="checkbox" name="im-for1[]" value="$695.00 1 year Foreign - 16 issues" />&nbsp;<span class="wpcf7-list-item-label">$695.00 1 year Foreign - 16 issues</span></label></span></span></span></p> 
 </fieldset> 
