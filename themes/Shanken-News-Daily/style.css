@@ -974,9 +974,12 @@ table#wp-calendar {
 table#wp-calendar, #wp-calendar tbody, #wp-calendar tfoot, #wp-calendar thead, #wp-calendar tr, #wp-calendar th, #wp-calendar td {
 	color: #565656;
 	font-family: 'Open Sans', 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif;
-	border: 1px solid rgba(207,207,207,0.4);
-	line-height: 1.2;
+/* 	border: 1px solid rgba(207,207,207,0.4); */
+	line-height: 1.5;
+	text-align: center;
+	font-size: 13px;
 	margin: 4px 0 0px 0;
+
 }
 .calendar-text {
 	line-height: 1.2;
@@ -990,9 +993,11 @@ table#wp-calendar, #wp-calendar tbody, #wp-calendar tfoot, #wp-calendar thead, #
 	color:rgba(180,180,180,0.8);
 	text-shadow: 0 1px 0 rgba(250,250,250,1);
 }
+/*
 td#next {
 	text-align: right;
 }
+*/
 
 /* ========================================================= MQ ===*/
 @media (max-width: 768px){
