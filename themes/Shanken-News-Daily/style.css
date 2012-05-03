@@ -603,9 +603,9 @@ img.alignleft {float: left; padding: 0; margin: 0px 8px 0px 0px; display: inline
 	background-repeat:repeat-x;
 }
 #tagline h2{
-	font-size: 24px;
+	font-size: 23px;
 	font-family: 'Open Sans', 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif;
-	font-weight: 300;
+	font-weight: bold;
 	letter-spacing: normal;
 	line-height: 1.2;
 }
@@ -983,6 +983,7 @@ table#wp-calendar, #wp-calendar tbody, #wp-calendar tfoot, #wp-calendar thead, #
 	margin: 4px 0 0px 0;
 
 }
+
 .calendar-text {
 	line-height: 1.2;
 	margin-top: 0;
