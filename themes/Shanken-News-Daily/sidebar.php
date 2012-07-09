@@ -1,6 +1,6 @@
 <div id="sidebar" class="one_third">
 		
-		<form id="search-form-inline" action="" method="get" role="search">
+		<form id="search-form-inline" action="/" method="get" role="search">
 							<div class="search-wrap">
 								<div class="search-input">
 									<input id="s" type="search" name="s" value=""  placeholder="search..." x-webkit-speech="" x-webkit-grammar="builtin:search" onwebkitspeechchange="startSearch()">
