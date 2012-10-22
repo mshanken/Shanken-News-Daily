@@ -7,7 +7,6 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<title>Shanken News Daily: Exclusive news and research on the wine, spirits and beer business</title>
-	<meta name="description" content="Shanken News Daily: Exclusive news and research on the wine, spirits and beer business">
 	<meta name="author" content="M. Shanken Communications, Inc.">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
