@@ -27,7 +27,7 @@
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
 	
 	<script src="https://s3.amazonaws.com/toolkit.mshanken.com/js/modernizr.min.js"></script>
-	
+	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
