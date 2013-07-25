@@ -764,7 +764,7 @@ a.addthis_button_preferred_1:hover, a.addthis_button_preferred_2:hover, a.addthi
 	z-index: 15;
 }
 #ad-desktop {
-	opacity: 0.8;
+	opacity: 1;
 	margin:0;
 	padding:0;
 	display: block;
