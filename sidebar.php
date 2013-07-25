@@ -1,25 +1,20 @@
 <div id="sidebar" class="one_third">
+	<form id="search-form-inline" action="/" method="get" role="search">
+		<div class="search-wrap">
+			<div class="search-input">
+				<input id="s" type="search" name="s" value=""  placeholder="search..." x-webkit-speech="" x-webkit-grammar="builtin:search" onwebkitspeechchange="startSearch()">
+				<input id="search-submit" type="submit" value=""/>
+			</div><!--/search-input-->
+		</div><!--/search-wrap-->
+	</form><!--/searchform-->
 		
-		<form id="search-form-inline" action="/" method="get" role="search">
-							<div class="search-wrap">
-								<div class="search-input">
-									<input id="s" type="search" name="s" value=""  placeholder="search..." x-webkit-speech="" x-webkit-grammar="builtin:search" onwebkitspeechchange="startSearch()">
-									<input id="search-submit" type="submit" value=""/>
-								</div><!--/search-input-->
-							</div><!--/search-wrap-->
-		</form><!--/searchform-->
-		
-		<div class="widget-container" id="ad-desktop">
-			<a href="http://www.winespectator.com/micro/show/id/40311" title="Wine Spectator's New York Wine Experience"><img src="/wp-content/themes/Shanken-News-Daily/img/NYWEbanner300x250.gif" alt="Wine Spectator's New York Wine Experience" width="290" /></a>
-		</div><!--/widget-container-->
+	<div class="widget-container" id="ad-desktop">
+		<a href="http://www.winespectator.com/micro/show/id/40311" title="Wine Spectator's New York Wine Experience"><img src="/wp-content/themes/Shanken-News-Daily/img/NYWEbanner290x242.jpg" alt="Wine Spectator's New York Wine Experience" /></a>
+	</div><!--/widget-container-->
 			
 
 <?php
-	/* When we call the dynamic_sidebar() function, it'll spit out
-	 * the widgets for that widget area. If it instead returns false,
-	 * then the sidebar simply doesn't exist, so we'll hard-code in
-	 * some default sidebar stuff just in case.
-	 */
+	
 	if ( ! dynamic_sidebar( 'primary-widget-area' ) ) : ?>
 	
 		<div class="widget-container">
@@ -48,7 +43,6 @@
 				</ul>
 		</div><!--/widget-container-->
 <?php
-	// A second sidebar for widgets, just because.
 	if ( is_active_sidebar( 'secondary-widget-area' ) ) : ?>
 
 			<div>
