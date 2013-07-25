@@ -8,10 +8,10 @@
 								</div><!--/search-input-->
 							</div><!--/search-wrap-->
 		</form><!--/searchform-->
-		<!--
-<div class="widget-container" id="ad-desktop">
-			<a href="http://www.winespectator.com/micro/show?id=40690" title="The 36th annual Impact Marketing Seminar - March 22, 2012"><img src="/wp-content/themes/Shanken-News-Daily/img/IMP-MS2011-290x220.jpg" alt="The 36th annual Impact Marketing Seminar - March 22, 2012" /></a>
-		</div><!--/widget-container-->
+		
+		<div class="widget-container" id="ad-desktop">
+			<a href="http://www.winespectator.com/micro/show/id/40311" title="Wine Spectator's New York Wine Experience"><img src="/wp-content/themes/Shanken-News-Daily/img/NYWEbanner300x250.gif" alt="Wine Spectator's New York Wine Experience" width="290" /></a>
+		</div><!--/widget-container
 			
 
 <?php
