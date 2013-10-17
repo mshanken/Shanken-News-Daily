@@ -486,19 +486,19 @@ input:-moz-placeholder{
 .one_third { 
 	float: left;
 	margin: 0;
-	width: 310px;
+	width: 320px;
 }
 .two_third {
 	float: left;
 	margin: 0;
 	padding-right: 20px;
-	width: 590px;
+	width: 580px;
 }
-div#tagline.two_third{
+div#tagline.two_third {
 	float: left;
 	margin: 0;
 	padding-left: 10px;
-	width: 600px;
+	width: 590px;
 }
 span#newerlink {
 	display: inline;
@@ -718,6 +718,7 @@ a.addthis_button_preferred_1, a.addthis_button_preferred_2, a.addthis_button_pre
 a.addthis_button_preferred_1:hover, a.addthis_button_preferred_2:hover, a.addthis_button_preferred_3:hover, a.addthis_button_preferred_4:hover, a.addthis_button_compact:hover {
 	opacity: 0.8;
 }
+
 #sidebar {
 	font-family: 'Open Sans', 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif;
 	color: #a0a0a0;
