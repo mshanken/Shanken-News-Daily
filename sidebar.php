@@ -19,7 +19,7 @@
 		<img src="http://ad.doubleclick.net/N4054/ad/msha.snd.home;sz=300x250;ord=[timestamp]?" width="300" height="250" />
 		</a>
 		</noscript>
-		<a href="http://www.winespectator.com/micro/show/id/40311" title="Wine Spectator's New York Wine Experience"><img src="/wp-content/themes/Shanken-News-Daily/img/NYWEbanner290x242.jpg" alt="Wine Spectator's New York Wine Experience" /></a>
+		<!-- <a href="http://www.winespectator.com/micro/show/id/40311" title="Wine Spectator's New York Wine Experience"><img src="/wp-content/themes/Shanken-News-Daily/img/NYWEbanner290x242.jpg" alt="Wine Spectator's New York Wine Experience" /></a> -->
 	</div><!--/widget-container-->
 			
 
