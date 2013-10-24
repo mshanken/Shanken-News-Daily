@@ -9,18 +9,17 @@
 	</form><!--/searchform-->
 		
 	<div class="widget-container" id="ad-desktop">
-		<!-- msha.snd.home -->
-		<script type="text/javascript">
-		  var ord = window.ord || Math.floor(Math.random() * 1e16);
-		  document.write('<script type="text/javascript" src="http://ad.doubleclick.net/N4054/adj/msha.snd.home;sz=300x250;ord=' + ord + '?"><\/script>');
-		</script>
-		<noscript>
-		<a href="http://ad.doubleclick.net/N4054/jump/msha.snd.home;sz=300x250;ord=[timestamp]?">
-		<img src="http://ad.doubleclick.net/N4054/ad/msha.snd.home;sz=300x250;ord=[timestamp]?" width="300" height="250" />
-		</a>
-		</noscript>
-		<!-- <a href="http://www.winespectator.com/micro/show/id/40311" title="Wine Spectator's New York Wine Experience"><img src="/wp-content/themes/Shanken-News-Daily/img/NYWEbanner290x242.jpg" alt="Wine Spectator's New York Wine Experience" /></a> -->
-	</div><!--/widget-container-->
+		<!-- msha.snd.home/msha.snd.home/main -->
+                <script type="text/javascript">
+                  var ord = window.ord || Math.floor(Math.random() * 1e16);
+                  document.write('<script type="text/javascript" src="http://ad.doubleclick.net/N4054/adj/msha.snd.home/msha.snd.home/main;sz=300x250;pos=trc;tile=1;ord=' + ord + '?"><\/script>');
+                </script>
+                <noscript>
+                <a href="http://ad.doubleclick.net/N4054/jump/msha.snd.home/msha.snd.home/main;sz=300x250;pos=trc;tile=1;ord=[timestamp]?">
+                <img src="http://ad.doubleclick.net/N4054/ad/msha.snd.home/msha.snd.home/main;sz=300x250;pos=trc;tile=1;ord=[timestamp]?" width="300" height="250" />
+                </a>
+                </noscript>
+   	</div><!--/widget-container-->
 			
 
 <?php
