@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-			
+
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 	<article class="two_third"><!-- start posts area -->
 		<section class="post">
@@ -17,7 +17,7 @@
 				<h2><?php printf( esc_attr__( 'About %s', 'twentyten' ), get_the_author() ); ?></h2>
 				<?php the_author_meta( 'description' ); ?>
 				<a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><?php printf( __( 'View all posts by %s &rarr;', 'twentyten' ), get_the_author() ); ?></a>
-				
+
 <?php endif; ?>
 
 <!-- AddThis Button BEGIN -->
@@ -31,18 +31,25 @@
 </ul>
 <script type="text/javascript">var addthis_config = {"data_track_clickback":true};</script>
 <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4daee8be31d57ce8"></script>
-<!-- AddThis Button END -->		
-						
+<!-- AddThis Button END -->
+
 <?php $tags_list = get_the_tag_list( '', ', ' );
 		if ( $tags_list ): ?>
-	<span class="posted"><?php printf( __( 'Tagged : %2$s', 'twentyten' ), 'entry-utility-prep entry-utility-prep-tag-links', $tags_list ); ?></span>
+		<p><span class="posted"><?php printf( __( 'Tagged : %2$s', 'twentyten' ), 'entry-utility-prep entry-utility-prep-tag-links', $tags_list ); ?></span></p>
 		<?php endif; ?>
 	<p><?php edit_post_link( __( 'Edit', 'twentyten' ), '', '' ); ?></p>
-				
+
+		<p><a href="" title="" class="article-promo">Get your first look at 2014 data and 2015 projections for the wine, spirits and cider industries. <span>Order your 2015 Impact Databank Reports</span>. Click here.</a></p>
+
 		</section>
 		<p><span id="prevlink">Previous&nbsp;:&nbsp;<?php previous_post_link( '%link', '%title ' . _x( '' ) . '' ); ?></span>
 		<span id="newerlink">Next&nbsp;:&nbsp;<?php next_post_link( '%link', '%title ' . _x( '' ) . '' ); ?></span></p>
+
+
+
 	</article><!-- end posts area -->
+
+
 
 <?php endwhile; // end of the loop. ?>
 
