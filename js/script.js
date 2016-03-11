@@ -35,11 +35,5 @@ yepnope([
 },
 {
 	load : 'http://www.google-analytics.com/ga.js'
-},
-{
-  load: '/wp-content/themes/Shanken-News-Daily/js/js.cookie.js'
-},
-{
-  load: '//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'
 }
 ]);
