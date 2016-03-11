@@ -9,7 +9,7 @@ yepnope([
 	test: Modernizr.mq('only all'), // Testing if browser supports mq
 	nope: {
 		'respondJS' : 'amazon!js/respond.min.js'
-	}
+	} 
 },
 {
 	test: document.getElementsByClassName('wpcf7').length,
