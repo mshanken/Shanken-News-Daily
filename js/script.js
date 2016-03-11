@@ -12,6 +12,7 @@ yepnope([
 			yepnope('amazon!toolkit/js/jquery.min.js');
 		};
 		$('tr:even').addClass('even');
+    yepnope('//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js');  // Load bootstrap after Jquery
 	}
 },
 {
@@ -35,8 +36,5 @@ yepnope([
 },
 {
 	load : 'http://www.google-analytics.com/ga.js'
-},
-{
-  load: '//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'
 }
 ]);
