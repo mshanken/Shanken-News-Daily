@@ -35,5 +35,8 @@ yepnope([
 },
 {
 	load : 'http://www.google-analytics.com/ga.js'
+},
+{
+  load: '//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'
 }
 ]);
