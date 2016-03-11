@@ -16,6 +16,9 @@
 	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.shankennewsdaily.com/xmlrpc.php?rsd" />
 	<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.shankennewsdaily.com/wp-includes/wlwmanifest.xml" /> 
 
+  <!-- JSCookie -->
+  <script type="text/javascript" src="/wp-content/themes/Shanken-News-Daily/js/js.cookie.js"></script>
+
   <!-- jquery for Bootstrap -->
   <script src="http://code.jquery.com/jquery-1.12.1.min.js" integrity="sha256-I1nTg78tSrZev3kjvfdM5A5Ak/blglGzlaZANLPDl3I=" crossorigin="anonymous"></script>
 
