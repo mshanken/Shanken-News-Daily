@@ -41,6 +41,11 @@
 </head>
 
 <body <?php body_class(); ?>>
+
+<script>
+  dataLayer = [];
+</script>
+
 	<div class="container"><!-- start container -->
 		<div class="page">
 			<div class="content">
