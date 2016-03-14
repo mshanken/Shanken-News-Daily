@@ -156,6 +156,7 @@ function apiCall(email) {
     url: url,
     dataType: 'json',
     success: checkAPIResponse
+    error: errorAPIResponse
   });
 
 }
@@ -200,12 +201,34 @@ function checkAPIResponse(response) {
 
 }
 
+function errorAPIResponse(x,t,m) {
+  console.log('API call errored out:'+t);
+
+  // Google Analytics event fire
+  dataLayer.push({'event': 'api_error_'+t});
+
+  // Clear out the Checking message
+  clearModalSuccess();
+
+  // Post warning
+  postModalWarning('Sorry, we\'re having a problem with our system right now.  Come on in.');
+
+  setTimeout(function() {
+    $('basicModal').modal('hide');
+  },5000);
+
+
+}
+
 function authenticateUser() {
 
   // User is on the list - authenticate them
   console.log('User is valid: authenticate them');
 
-  // First, hide the warning
+  // Google Analytics event fire
+  dataLayer.push({'event': 'user_authenticated'});
+
+  // First, hide the success
   clearModalSuccess();
 
   // Set the Paywall Cookie
@@ -223,6 +246,9 @@ function authenticationFailed() {
 
   // User is not on the list - reject
   console.log('User is invalid: reject them');
+
+  // Google Analytics event fire
+  dataLayer.push({'event': 'user_rejected'});
 
   // First, hide the warning
   clearModalSuccess();
