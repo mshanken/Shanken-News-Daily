@@ -155,7 +155,7 @@ function apiCall(email) {
   $.ajax({
     url: url,
     dataType: 'json',
-    success: checkAPIResponse
+    success: checkAPIResponse,
     error: errorAPIResponse
   });
 
@@ -211,11 +211,11 @@ function errorAPIResponse(x,t,m) {
   clearModalSuccess();
 
   // Post warning
-  postModalWarning('Sorry, we\'re having a problem with our system right now.  Come on in.');
+  postModalWarning('Sorry, we\'re having a problem with our system right now.  Granting temporary access.');
 
   setTimeout(function() {
-    $('basicModal').modal('hide');
-  },5000);
+    $('#basicModal').modal('hide');
+  },4000);
 
 
 }
