@@ -106,8 +106,7 @@ function performRestrictedBusinessLogic() {
   // Fire GTM event by pushing data to dataLayer
   dataLayer.push({'event': 'modal_restricted_fire'});
 
-  var subscribeLink = 'http://hallmark.com',
-    apiLink = 'http://api.hallmark.com',
+  var subscribeLink = 'http://newsletters.shankennewsdaily.com/',
     modalTitleText = 'Are You a Shanken News Daily Subscriber?',
     modalButtonText = 'Log In',
     modalBodyText = 'This area is available to <i>Shanken News Daily</i> subscribers only. Please log in below.<p>If you don\'t have a subscription, <a href="'+subscribeLink+'" onclick="dataLayer.push({\'event\'\: \'modal_paywall_click\'});" style="color:blue">click here to sign up today.</a>.',
@@ -253,8 +252,10 @@ function authenticationFailed() {
   // First, hide the warning
   clearModalSuccess();
 
+  var subscribeLink = 'http://newsletters.shankennewsdaily.com/'
+
   // Then, let them know it failed
-  postModalWarning('Sorry. We don\'t recognize that log in information. Please try again.<p>Need help? Click here. Do you want to subscribe to <i>Shanken News Daily</i>? Click here.');
+  postModalWarning('Sorry. We don\'t recognize that log in information. Please try again.<p>Need help? Click here. Do you want to subscribe to <i>Shanken News Daily</i>? <a href="'+subscribeLink+'" onclick="dataLayer.push({\'event\'\: \'modal_paywall_authfail_click\'});" style="color:blue">Click here.');
   
 }
 
