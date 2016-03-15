@@ -108,10 +108,10 @@ function performRestrictedBusinessLogic() {
 
   var subscribeLink = 'http://hallmark.com',
     apiLink = 'http://api.hallmark.com',
-    modalTitleText = 'Restricted: Subscribers Only',
+    modalTitleText = 'Are You a Shanken News Daily Subscriber?',
     modalButtonText = 'Log In',
-    modalBodyText = 'Only current subscribers to Shanken News Daily may read this content.  If you are a current subscriber, please enter your email address below.  If you are not, <a href="'+subscribeLink+'" onclick="dataLayer.push({\'event\'\: \'modal_paywall_click\'});" style="color:blue">click here to subscribe</a>.',
-    modalBodyForm = '<form class="form-inline"><div id="flashMessageWarning" class="alert alert-danger" style="display: none;"></div><div id="flashMessageSuccess" class="alert alert-success" style="display: none;"></div><div class="form-group"><div class="input-group"><input type="text" class="form-control" id="subscriberEmail" placeholder="Members email"></div></div>&nbsp;<button id="modalSubmit" class="btn btn-primary">Member Log In</button></form>',
+    modalBodyText = 'This area is available to <i>Shanken News Daily</i> subscribers only. Please log in below.<p>If you don\'t have a subscription, <a href="'+subscribeLink+'" onclick="dataLayer.push({\'event\'\: \'modal_paywall_click\'});" style="color:blue">click here to sign up today.</a>.',
+    modalBodyForm = '<form class="form-inline"><div id="flashMessageWarning" class="alert alert-danger" style="display: none;"></div><div id="flashMessageSuccess" class="alert alert-success" style="display: none;"></div><div class="form-group"><div class="input-group"><input type="text" class="form-control" id="subscriberEmail" placeholder="Members email"></div></div>&nbsp;<button id="modalSubmit" class="btn btn-primary">Subscriber Log In</button></form>',
     modalButtonLink = apiLink,
     modalEventName = 'paywall';
   var modalBody = getModalBody(modalTitleText, modalBodyText+'<hr>'+modalBodyForm, modalButtonText, modalButtonLink, modalEventName);
@@ -254,7 +254,7 @@ function authenticationFailed() {
   clearModalSuccess();
 
   // Then, let them know it failed
-  postModalWarning('Sorry, that is not a current subscriber.  Please try again, or use the link above to subscribe.');
+  postModalWarning('Sorry. We don\'t recognize that log in information. Please try again.<p>Need help? Click here. Do you want to subscribe to <i>Shanken News Daily</i>? Click here.');
   
 }
 
