@@ -39,7 +39,7 @@
 		<?php endif; ?>
 	<p><?php edit_post_link( __( 'Edit', 'twentyten' ), '', '' ); ?></p>
 
-		<p><a href="http://assets.winespectator.com/wso/pdf/impactOrderForm2015us_v3.pdf" title="Order Impact Databank" class="article-promo">Get your first look at 2014 data and 2015 projections for the wine, spirits and cider industries. <span>Order your 2015 Impact Databank Reports</span>. Click here.</a></p>
+		<p><a href="http://www.shankennewsdaily.com/index.php/impact-databank-report/" title="Order Impact Databank" class="article-promo">Get your first look at 2015 data and 2016 projections for the wine, spirits and cider industries. <span>Order your 2016 Impact Databank Reports</span>. Click here.</a></p>
 
 		</section>
 		<p><span id="prevlink">Previous&nbsp;:&nbsp;<?php previous_post_link( '%link', '%title ' . _x( '' ) . '' ); ?></span>
