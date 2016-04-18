@@ -7,7 +7,7 @@
 			</div><!--/search-input-->
 		</div><!--/search-wrap-->
 	</form><!--/searchform-->
-		
+
 	<div class="widget-container" id="ad-desktop">
 		<!-- msha.snd.home/msha.snd.home/main -->
                 <script type="text/javascript">
@@ -20,12 +20,12 @@
                 </a>
                 </noscript>
    	</div><!--/widget-container-->
-			
+
 
 <?php
-	
+
 	if ( ! dynamic_sidebar( 'primary-widget-area' ) ) : ?>
-	
+
 		<div class="widget-container">
 			<h5><?php _e( 'Archives', 'twentyten' ); ?></h5>
 				<ul>
@@ -43,12 +43,12 @@
 		</div><!--/widget-container-->
 
 		<?php endif; // end primary widget area ?>
-		
+
 		<div class="widget-container">
 			<h3 class="widget-title">FOLLOW US</a></h3>
 				<ul id="socialicons">
-					<li><a href="http://twitter.com/#!/ShankenNews"><img src="http://www.shankennewsdaily.com/wp-content/themes/Shanken-News-Daily/img/twitter.png" alt="Shanken News Daily on Twitter" title="Shanken News Daily on Twitter"/></a></li>
-					<li><a href="http://www.facebook.com/#!/pages/Shanken-News-Daily/187376324643407"><img src="http://www.shankennewsdaily.com/wp-content/themes/Shanken-News-Daily/img/facebook.png" alt="Shanken News Daily on Facebook" title="Shanken News Daily on Facebook"/></a></li>
+					<li><a href="http://twitter.com/#!/ShankenNews"><img width="31" height="31" src="//s3.amazonaws.com/assets.mshanken.com/snd/twitter.png" alt="Shanken News Daily on Twitter" title="Shanken News Daily on Twitter"/></a></li>
+					<li><a href="http://www.facebook.com/#!/pages/Shanken-News-Daily/187376324643407"><img width="31" height="31" src="//s3.amazonaws.com/assets.mshanken.com/snd/facebook.png" alt="Shanken News Daily on Facebook" title="Shanken News Daily on Facebook"/></a></li>
 				</ul>
 		</div><!--/widget-container-->
 <?php
@@ -57,6 +57,6 @@
 			<div>
 				<?php dynamic_sidebar( 'secondary-widget-area' ); ?>
 			</div>
-			
+
 <?php endif; ?>
 </div><!--/#sidebar-->
