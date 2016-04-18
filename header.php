@@ -43,7 +43,7 @@
 	<script type='text/javascript'>
 	 googletag.cmd.push(function() {
 	   googletag.defineSlot('/4054/msha.snd.home', [[300, 250]],
-	   'div-gpt-ad-1461009721118-0').addService(googletag.pubads().setCollapseEmptyDiv(true).setTargeting('test', 'refresh'));
+	   'div-gpt-ad-1461009721118-0').addService(googletag.pubads().setTargeting('test', 'refresh'));
 	   googletag.pubads().enableSingleRequest();
 	   googletag.enableServices();
 	 });
