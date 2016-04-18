@@ -9,22 +9,46 @@
 	<title>Shanken News Daily: Exclusive news and research on the wine, spirits and beer business</title>
 	<meta name="author" content="M. Shanken Communications, Inc.">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
+
 
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 	<link rel="alternate" type="application/rss+xml" title="Shanken News Daily &raquo; Feed" href="http://www.shankennewsdaily.com/index.php/feed/" />
 	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.shankennewsdaily.com/xmlrpc.php?rsd" />
-	<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.shankennewsdaily.com/wp-includes/wlwmanifest.xml" /> 
-
-	
+	<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.shankennewsdaily.com/wp-includes/wlwmanifest.xml" />
 	<link rel="shortcut icon" href="/wp-content/themes/Shanken-News-Daily/img/favicon.ico">
 	<link rel="apple-touch-icon" href="/wp-content/themes/Shanken-News-Daily/img/apple-touch-icon.png">
-
-
 	<link rel="stylesheet" href="/wp-content/themes/Shanken-News-Daily/style.css">
 	<!-- <link rel="stylesheet" href="http://shankennewsdaily.com/wp-content/plugins/contact-form-7/styles.css"> -->
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
-	
+
+	<script type='text/javascript'>
+	 var googletag = googletag || {};
+	 googletag.cmd = googletag.cmd || [];
+
+	 (function() {
+	   var gads = document.createElement('script');
+	   gads.async = true;
+	   gads.type = 'text/javascript';
+
+	   var useSSL = 'https:' == document.location.protocol;
+	   gads.src = (useSSL ? 'https:' : 'http:') +
+
+	    '//www.googletagservices.com/tag/js/gpt.js';
+
+	   var node = document.getElementsByTagName('script')[0];
+	   node.parentNode.insertBefore(gads, node);
+	 })();
+	</script>
+
+	<script type='text/javascript'>
+	 googletag.cmd.push(function() {
+	   googletag.defineSlot('/4054/msha.snd.home/msha.snd.home/main', [[300, 250]],
+	   'ad-slot').addService(googletag.pubads().setCollapseEmptyDiv(true).setTargeting('test', 'refresh'));
+	   googletag.pubads().enableSingleRequest();
+	   googletag.enableServices();
+	 });
+	</script>
+
 	<script src="https://s3.amazonaws.com/toolkit.mshanken.com/js/modernizr.min.js"></script>
 	<?php wp_head(); ?>
 </head>
