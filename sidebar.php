@@ -8,13 +8,12 @@
 		</div><!--/search-wrap-->
 	</form><!--/searchform-->
 
-
-	<div class="widget-container" id="ad-slot">
-		<!-- msha.snd.home/msha.snd.home/main -->
+	<!-- /4054/msha.snd.home -->
+	<div id='div-gpt-ad-1461009721118-0' class="widget-container">
 		<script type='text/javascript'>
-			googletag.cmd.push(function() { googletag.display('ad-slot'); });
+			googletag.cmd.push(function() { googletag.display('div-gpt-ad-1461009721118-0'); });
 		</script>
-	</div><!--/widget-container-->
+	</div>
 
 
 		<?php if ( ! dynamic_sidebar( 'primary-widget-area' ) ) : ?>
