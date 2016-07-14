@@ -57,7 +57,7 @@ function removePaywallCookie() {
 
 
 // Centralize the generation of the modal body HTML
-function getModalBody(titleText, bodyText, buttonText, buttonLink, eventNameGA) {
+function getModalBody(titleText, bodyText, eventNameGA) {
   return '<div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true" style="color:black"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h4 class="modal-title" id="myModalLabel">'+titleText+'</h4></div><div class="modal-body">'+bodyText+'</div></div></div></div>';
 }
 
@@ -108,12 +108,10 @@ function performRestrictedBusinessLogic() {
 
   var subscribeLink = 'http://newsletters.shankennewsdaily.com/',
     modalTitleText = 'Are You a Shanken News Daily Subscriber?',
-    modalButtonText = 'Log In',
     modalBodyText = 'This area is available to <i>Shanken News Daily</i> subscribers only. Please log in below.<p>If you don\'t have a subscription, <a href="'+subscribeLink+'" onclick="dataLayer.push({\'event\'\: \'modal_paywall_click\'});" style="color:blue">click here to sign up today.</a>.',
     modalBodyForm = '<form class="form-inline"><div id="flashMessageWarning" class="alert alert-danger" style="display: none;"></div><div id="flashMessageSuccess" class="alert alert-success" style="display: none;"></div><div class="form-group"><div class="input-group"><input type="text" class="form-control" id="subscriberEmail" placeholder="Members email"></div></div>&nbsp;<button id="modalSubmit" class="btn btn-primary">Subscriber Log In</button></form>',
-    modalButtonLink = apiLink,
     modalEventName = 'paywall';
-  var modalBody = getModalBody(modalTitleText, modalBodyText+'<hr>'+modalBodyForm, modalButtonText, modalButtonLink, modalEventName);
+  var modalBody = getModalBody(modalTitleText, modalBodyText+'<hr>'+modalBodyForm, modalEventName);
   //console.log('Modal Body:', modalBody);
   //console.log('performExpiredSubBusinessLogic called');
   $('#footer').after(modalBody);
