@@ -149,7 +149,7 @@ function apiCall(email) {
   if(!email)
     return false;
 
-  var url = 'http://staging.winespectator.com/api/cIGetUserLists?email='+email;
+  var url = 'http://www.winespectator.com/api/cIGetUserLists?email='+email;
 
   $.ajax({
     url: url,
