@@ -301,7 +301,7 @@ $(document).ready(function() {
     doPaywall();
 
     // Wipe out the cookie, during testing
-    removePaywallCookie();
+    //removePaywallCookie();
   },1000);
 
 });
