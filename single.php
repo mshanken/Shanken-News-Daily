@@ -20,6 +20,8 @@
 
 <?php endif; ?>
 
+<a href="http://newsletters.shankennewsdaily.com/" title="Subscribe to Shanken News Daily’s Email Newsletter" style="display:block; padding:0.56em 0; margin: 0; font-style:italic; font-weight:bold;font-size:1.1em;line-height:1.28;">Subscribe to Shanken News Daily’s Email Newsletter, delivered to your inbox each morning.</a>
+
 <!-- AddThis Button BEGIN -->
 <ul class="addthis_toolbox addthis_default_style addthis_32x32_style">
 	<li><a class="addthis_button_preferred_1"></a></li>
