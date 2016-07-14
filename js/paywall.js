@@ -2,14 +2,14 @@ function isPageBlocked() {
   // Add logic here later to check URL and see if page is restricted
   // Logic (ugly) is: contains index.php/DDDD
   
-  console.log('Calling isPageBlocked');
+  //console.log('Calling isPageBlocked');
   var loc = window.location.href;
 
   // manually override URLs for testing vs live URL string
   // Remove this before going live
-  loc = "http://www.shankennewsdaily.com/index.php/2015/10/30/13664/rothschild-familys-shared-champagne-brand-seeing-sharpened-u-s-focus/";
+  //loc = "http://www.shankennewsdaily.com/index.php/2015/10/30/13664/rothschild-familys-shared-champagne-brand-seeing-sharpened-u-s-focus/";
 
-  console.log('URL location is:',loc);
+  //console.log('URL location is:',loc);
 
   var urlRegex = new RegExp(/index\.php\/\d\d\d\d/); // Look for index.php/DDDD
 
