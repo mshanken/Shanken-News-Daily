@@ -281,7 +281,6 @@ function doPaywall() {
 
       // Restricted page, no cookie -- present login modal
       performRestrictedBusinessLogic();
-      setPaywallCookie();
 
     }
 
