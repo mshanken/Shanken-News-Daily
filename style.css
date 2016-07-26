@@ -197,7 +197,7 @@ textarea,
 	color: #808080;
 	display: inline-block;
 	font-size: 13px;
-	height: 18px;
+	/*height: 18px;*/
 	line-height: 18px;/*WRONG*/
 	margin-bottom:13px;
 	padding: 4px;
