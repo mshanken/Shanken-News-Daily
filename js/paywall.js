@@ -150,7 +150,10 @@ function loginUser(email) {
   postModalSuccess('Logging you in now, hold just a second');
 
   // Take the email and toss it against Hallmark
-  apiCall(email);
+  // But wait 3 seconds in order to give chance for message to be read
+  window.setTimeout(function() {
+    apiCall(email);
+  }, 3000);
 
 
 }
