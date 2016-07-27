@@ -108,8 +108,21 @@ function performRestrictedBusinessLogic() {
 
   var subscribeLink = 'http://newsletters.shankennewsdaily.com/',
     modalTitleText = 'Are You a Shanken News Daily Subscriber?',
-    modalBodyText = 'This area is available to <i>Shanken News Daily</i> subscribers only. Please log in below.<p>If you don\'t have a subscription, <a href="'+subscribeLink+'" onclick="dataLayer.push({\'event\'\: \'modal_paywall_click\'});" style="color:blue">click here to sign up today.</a>',
-    modalBodyForm = '<form class="form-inline"><div id="flashMessageWarning" class="alert alert-danger" style="display: none;"></div><div id="flashMessageSuccess" class="alert alert-success" style="display: none;"></div><div class="form-group"><div class="input-group"><span class="input-group-addon" id="email-address-text">Email Address</span><input type="text" class="form-control" id="subscriberEmail"></div></div><br><br><div class="text-right"><button id="modalSubmit" class="btn btn-primary">Subscriber Log In</button></div></form>',
+    modalBodyText = 'This website is available to <i>Shanken News Daily</i> subscribers only. Please log in below.<p>If you don\'t have a subscription, <a href="'+subscribeLink+'" onclick="dataLayer.push({\'event\'\: \'modal_paywall_click\'});" style="color:blue">click here to sign up today.</a>',
+    modalBodyForm = '<form class="form-horizontal">\
+    <div id="flashMessageWarning" class="alert alert-danger" style="display: none;"></div>\
+    <div id="flashMessageSuccess" class="alert alert-success" style="display: none;"></div>\
+    <div class="form-group">\
+      <label for="subscriberEmail" class="col-sm-4 control-label">Email Address</label>\
+      <div class="col-sm-8">\
+        <input type="email" class="form-control" id="subscriberEmail"></div>\
+      </div>\
+      <div class="col-sm-4 center-block" style="float:none">\
+        <button id="modalSubmit" class="btn btn-primary">Subscriber Log In</button>\
+      </div>\
+    </div>\
+    <br>\
+    </form>',
     modalEventName = 'paywall';
   var modalBody = getModalBody(modalTitleText, modalBodyText+'<hr>'+modalBodyForm, modalEventName);
   //console.log('Modal Body:', modalBody);
