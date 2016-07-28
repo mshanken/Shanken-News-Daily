@@ -147,7 +147,7 @@ function loginUser(email) {
   clearModalWarning();
 
   // Show what we're doing
-  postModalSuccess('Logging you in now, hold just a second');
+  postModalSuccess('Logging you in now...hold just a second.');
 
   // Take the email and toss it against Hallmark
   // But wait 3 seconds in order to give chance for message to be read
