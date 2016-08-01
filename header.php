@@ -14,6 +14,13 @@
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 	<link rel="alternate" type="application/rss+xml" title="Shanken News Daily &raquo; Feed" href="http://www.shankennewsdaily.com/index.php/feed/" />
 	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.shankennewsdaily.com/xmlrpc.php?rsd" />
+
+  <!-- Load Jquery -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
+  <script type="text/javascript" src="/wp-content/themes/Shanken-News-Daily/js/js.cookie.js"></script>
+  <!-- Bootstrap Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script> 
+
 	<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.shankennewsdaily.com/wp-includes/wlwmanifest.xml" />
 	<link rel="shortcut icon" href="/wp-content/themes/Shanken-News-Daily/img/favicon.ico">
 	<link rel="apple-touch-icon" href="/wp-content/themes/Shanken-News-Daily/img/apple-touch-icon.png">
@@ -54,6 +61,11 @@
 </head>
 
 <body <?php body_class(); ?>>
+
+<script>
+  dataLayer = [];
+</script>
+
 	<div class="container"><!-- start container -->
 		<div class="page">
 			<div class="content">

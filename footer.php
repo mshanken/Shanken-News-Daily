@@ -7,5 +7,6 @@
 </div><!-- end container -->
 
 <script src="/wp-content/themes/Shanken-News-Daily/js/script.js"></script>
+<script src="/wp-content/themes/Shanken-News-Daily/js/paywall.js"></script>
 </body>
 </html>

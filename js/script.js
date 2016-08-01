@@ -6,19 +6,10 @@ yepnope.addPrefix('amazon', function(resourceObj) {
 var _gaq = [['_setAccount','UA-23484466-1'],['_trackPageview']];
 yepnope([
 {
-	load: '//ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js', // Jquery
-	complete: function () {
-		if (!window.jQuery) {
-			yepnope('amazon!toolkit/js/jquery.min.js');
-		};
-		$('tr:even').addClass('even');
-	}
-},
-{
 	test: Modernizr.mq('only all'), // Testing if browser supports mq
 	nope: {
 		'respondJS' : 'amazon!js/respond.min.js'
-	}
+	} 
 },
 {
 	test: document.getElementsByClassName('wpcf7').length,
