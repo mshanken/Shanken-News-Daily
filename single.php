@@ -44,8 +44,8 @@
 		<p><a href="http://www.shankennewsdaily.com/index.php/impact-databank-report/" title="Order Impact Databank" class="article-promo">Get your first look at 2015 data and 2016 projections for the wine, spirits and cider industries. <span>Order your 2016 Impact Databank Reports</span>. Click here.</a></p>
 
 		</section>
-		<p><span id="prevlink">Previous&nbsp;:&nbsp;<?php previous_post_link( '%link', '%title ' . _x( '' ) . '' ); ?></span>
-		<span id="newerlink">Next&nbsp;:&nbsp;<?php next_post_link( '%link', '%title ' . _x( '' ) . '' ); ?></span></p>
+		<p><span id="prevlink">Previous&nbsp;:&nbsp;<?php previous_post_link( '%link', '%title ' . __( '' ) . '' ); ?></span>
+		<span id="newerlink">Next&nbsp;:&nbsp;<?php next_post_link( '%link', '%title ' . __( '' ) . '' ); ?></span></p>
 
 
 
