@@ -2,14 +2,14 @@ function isPageBlocked() {
   // Add logic here later to check URL and see if page is restricted
   // Logic (ugly) is: contains index.php/DDDD
   
-  //console.log('Calling isPageBlocked');
+  console.log('Calling isPageBlocked');
   var loc = window.location.href;
 
   // manually override URLs for testing vs live URL string
   // Remove this before going live
   //loc = "http://www.shankennewsdaily.com/index.php/2015/10/30/13664/rothschild-familys-shared-champagne-brand-seeing-sharpened-u-s-focus/";
 
-  //console.log('URL location is:',loc);
+  console.log('URL location is:',loc);
 
   var urlRegex = new RegExp(/index\.php\/\d\d\d\d/); // Look for index.php/DDDD
 
@@ -33,26 +33,26 @@ function returnCookieInfo() {
 // Grab the cookie we use for handling modal logic
 function getPaywallCookie() {
   var cookieInfo = returnCookieInfo();
-  //console.log('getPaywallCookie called with name of ', cookieInfo.name);
+  console.log('getPaywallCookie called with name of ', cookieInfo.name);
   var cookie = Cookies.get(cookieInfo.name);
-  //console.log('cookie value is:', cookie);
+  console.log('cookie value is:', cookie);
   return cookie;
 }
 // Set the cookie if we need to
 function setPaywallCookie() {
   var cookieInfo = returnCookieInfo();
     value = true;
-    //console.log('setPaywallCookie called with name of ', cookieInfo.name);
-    //console.log('setPaywallCookie called with options of ', cookieInfo.options);
+    console.log('setPaywallCookie called with name of ', cookieInfo.name);
+    console.log('setPaywallCookie called with options of ', cookieInfo.options);
     cookieSet = Cookies.set(cookieInfo.name, value, cookieInfo.options);
-    //console.log('cookieSet is:', cookieSet);
+    console.log('cookieSet is:', cookieSet);
 }
 // Remove the cookie if we need to
 function removePaywallCookie() {
   var cookieInfo = returnCookieInfo();
-  //console.log('removeCookie called');
+  console.log('removeCookie called');
   var removed = Cookies.remove(cookieInfo.name,cookieInfo.options);
-  //console.log('Cookie removed is:', removed);
+  console.log('Cookie removed is:', removed);
 }
 
 
@@ -65,7 +65,7 @@ function getModalBody(titleText, bodyText, eventNameGA) {
 function validateEmail(email) {
   var emailRegex = new RegExp(/^.+@.+\..+$/);
   var validationResult = emailRegex.test(email);
-  //console.log('Valid email, sort of?: ',validationResult);
+  console.log('Valid email, sort of?: ',validationResult);
   return validationResult;
 }
 
@@ -125,15 +125,15 @@ function performRestrictedBusinessLogic() {
     </form>',
     modalEventName = 'paywall';
   var modalBody = getModalBody(modalTitleText, modalBodyText+'<hr>'+modalBodyForm, modalEventName);
-  //console.log('Modal Body:', modalBody);
-  //console.log('performExpiredSubBusinessLogic called');
+  console.log('Modal Body:', modalBody);
+  console.log('performExpiredSubBusinessLogic called');
   $('#footer').after(modalBody);
   $('#basicModal').modal({show: true, backdrop: 'static', keyboard: false});  // Extra options needed for security
-  //console.log('Just tried to show the modal.');
+  console.log('Just tried to show the modal.');
 
   // Add listener to the modal button, but only after listener is shown
   $('#modalSubmit').click(function(event) {
-    //console.log('ModalSubmit clicked!');
+    console.log('ModalSubmit clicked!');
     event.preventDefault();
     handleFormSubmission();
   })
@@ -177,33 +177,33 @@ function apiCall(email) {
 function checkAPIResponse(response) {
   var validLists = ['1000JTE00000001J95W','1000JTE00000001J95V'],
     authenticatedUser = false;
-  //console.log('API call returned!',response);
+  console.log('API call returned!',response);
   if(response.success === true) {
-    //console.log('Looping through valid lists',validLists.length);
+    console.log('Looping through valid lists',validLists.length);
 
     // Outer loop: go through valid List array
     for (var i = validLists.length - 1; i >= 0; i--) {
       if (authenticatedUser === true)   // Exit immediately if has been found on inside loop
         break;
-      //console.log('Checking this list:',validLists[i]);
+      console.log('Checking this list:',validLists[i]);
 
       // Inner loop: go through this user's email lists array
       for (var j = response.data.length - 1; j >= 0; j--) {
-        //console.log('Looking at this item in User:',response.data[j]);
+        console.log('Looking at this item in User:',response.data[j]);
 
         // Comparison 
         if (response.data[j] == validLists[i]) {
-          //console.log('We have a match - break!');
+          console.log('We have a match - break!');
           authenticatedUser = true;
           break;
         }
       }
     }
   } else {  
-    //console.log('No SND for you!');
+    console.log('No SND for you!');
   }
 
-  //console.log('Result of checking response is:',authenticatedUser);
+  console.log('Result of checking response is:',authenticatedUser);
 
   // Process the result
   if(authenticatedUser) {
@@ -215,7 +215,7 @@ function checkAPIResponse(response) {
 }
 
 function errorAPIResponse(x,t,m) {
-  //console.log('API call errored out:'+t);
+  console.log('API call errored out:'+t);
 
   // Google Analytics event fire
   dataLayer.push({'event': 'api_error_'+t});
@@ -236,7 +236,7 @@ function errorAPIResponse(x,t,m) {
 function authenticateUser() {
 
   // User is on the list - authenticate them
-  //console.log('User is valid: authenticate them');
+  console.log('User is valid: authenticate them');
 
   // Google Analytics event fire
   dataLayer.push({'event': 'user_authenticated'});
@@ -258,7 +258,7 @@ function authenticateUser() {
 function authenticationFailed() {
 
   // User is not on the list - reject
-  //console.log('User is invalid: reject them');
+  console.log('User is invalid: reject them');
 
   // Google Analytics event fire
   dataLayer.push({'event': 'user_rejected'});
@@ -279,19 +279,19 @@ function doPaywall() {
   var restricted = isPageBlocked();
 
   if (restricted === false) {
-    //console.log('Not a restricted page, exit immediately');
+    console.log('Not a restricted page, exit immediately');
     return;
 
   } else {
 
     // Page IS restricted -- proceed
-    //console.log('Restricted page: proceed with paywall logic');
+    console.log('Restricted page: proceed with paywall logic');
 
     // Now, check to see if we have a user cookie
     var myPaywallCookie = getPaywallCookie();
-    //console.log('myPaywallCookie is:',myPaywallCookie);
+    console.log('myPaywallCookie is:',myPaywallCookie);
     if (myPaywallCookie !== undefined) {
-      //console.log('Paywall cookie is set - have already done biz logic.  Break immediately.');
+      console.log('Paywall cookie is set - have already done biz logic.  Break immediately.');
       return;
     } else {
 
