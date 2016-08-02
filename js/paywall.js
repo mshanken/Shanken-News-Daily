@@ -269,7 +269,7 @@ function authenticationFailed() {
   var subscribeLink = 'http://newsletters.shankennewsdaily.com/'
 
   // Then, let them know it failed
-  postModalWarning('Sorry. We don\'t recognize that log in information. Please try again.<p>Need help? <a href="mailto:shankennewshelp@mshanken.com?subject=\'Help with Shanken News Daily website login\'">Click here</a>. Do you want to subscribe to <i>Shanken News Daily</i>? <a href="'+subscribeLink+'" onclick="dataLayer.push({\'event\'\: \'modal_paywall_authfail_click\'});" style="color:blue">Click here.');
+  postModalWarning('Sorry. We don\'t recognize that log in information. Please try again.<p>Need help? <a href="mailto:shankennewshelp@mshanken.com?subject=Help with Shanken News Daily website login">Click here</a>. Do you want to subscribe to <i>Shanken News Daily</i>? <a href="'+subscribeLink+'" onclick="dataLayer.push({\'event\'\: \'modal_paywall_authfail_click\'});" style="color:blue">Click here.');
   
 }
 
