@@ -175,7 +175,7 @@ function apiCall(email) {
 }
 
 function checkAPIResponse(response) {
-  var validLists = ['1000JTE00000001J95W','1000JTE00000001J95V'],
+  var validLists = ['1000JTE00000001J95W','1000JTE00000001IR71'],
     authenticatedUser = false;
   console.log('API call returned!',response);
   if(response.success === true) {
