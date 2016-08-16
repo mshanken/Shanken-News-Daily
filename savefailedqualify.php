@@ -2,7 +2,7 @@
 
   // Include the needed CIHelper file
   require __DIR__.'/CIHelper.php';
-
+  
   // Save this failed qualify attempt
   saveFailedQualifyAttempt();
 
