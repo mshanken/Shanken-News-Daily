@@ -163,7 +163,8 @@ function apiCall(email) {
   if(!email)
     return false;
 
-  var url = 'http://www.winespectator.com/api/cIGetUserLists?email='+email;
+  // var url = 'http://www.winespectator.com/api/cIGetUserLists?email='+email;
+  var url = '/paywall2.php?email='+email;
 
   $.ajax({
     url: url,
