@@ -163,7 +163,8 @@ function apiCall(email) {
   if(!email)
     return false;
 
-  var url = 'http://www.winespectator.com/api/cIGetUserLists?email='+email;
+  // var url = 'http://www.winespectator.com/api/cIGetUserLists?email='+email;
+  var url = 'http://api.shankennewsdaily.com/paywall/paywall2.php?email='+email;
 
   $.ajax({
     url: url,
@@ -175,6 +176,29 @@ function apiCall(email) {
 }
 
 function checkAPIResponse(response) {
+  var authenticatedUser = false;
+  console.log('API call returned!',response);
+
+  // Did the API call result in success?
+  if(response.success === true) {
+    console.log('API call says success');
+    authenticatedUser = true;
+  } else {
+    console.log('API call says failure');
+    authenticatedUser = false;
+  }
+
+  // Process the result
+  if(authenticatedUser) {
+    authenticateUser();
+  } else {
+    authenticationFailed();
+  }
+
+}
+
+
+function checkAPIResponse_original(response) {
   var validLists = ['1000JTE00000001J95W','1000JTE00000001IR71'],
     authenticatedUser = false;
   console.log('API call returned!',response);
