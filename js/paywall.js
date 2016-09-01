@@ -190,8 +190,10 @@ function checkAPIResponse(response) {
 
   // Process the result
   if(authenticatedUser) {
+    console.log('Time to authenticate the user');
     authenticateUser();
   } else {
+    console.log('Time to reject the user');
     authenticationFailed();
   }
 
