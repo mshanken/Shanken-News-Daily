@@ -164,7 +164,7 @@ function apiCall(email) {
     return false;
 
   // var url = 'http://www.winespectator.com/api/cIGetUserLists?email='+email;
-  var url = '/paywall/paywall2.php?email='+email;
+  var url = 'http://api.shankennewsdaily.com/paywall/paywall2.php?email='+email;
 
   $.ajax({
     url: url,
