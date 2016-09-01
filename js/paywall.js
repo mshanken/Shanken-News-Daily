@@ -182,20 +182,16 @@ function checkAPIResponse(response) {
   // Did the API call result in success?
   if(response.success === true) {
     console.log('API call says success');
-    authenticatedUser == true;
+    authenticatedUser = true;
   } else {
     console.log('API call says failure');
-    authenticatedUser == false;
+    authenticatedUser = false;
   }
-
-  console.log('authenticatedUser:',authenticatedUser);
 
   // Process the result
   if(authenticatedUser) {
-    console.log('Time to authenticate the user');
     authenticateUser();
   } else {
-    console.log('Time to reject the user');
     authenticationFailed();
   }
 
