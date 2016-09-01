@@ -188,6 +188,8 @@ function checkAPIResponse(response) {
     authenticatedUser == false;
   }
 
+  console.log('authenticatedUser:',authenticatedUser);
+
   // Process the result
   if(authenticatedUser) {
     console.log('Time to authenticate the user');
