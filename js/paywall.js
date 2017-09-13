@@ -109,7 +109,7 @@ function performRestrictedBusinessLogic() {
   var subscribeLink = 'http://newsletters.shankennewsdaily.com/',
     modalTitleText = 'Less Than $1 Per Day',
     // modalBodyText = 'This website is available to <i>Shanken News Daily</i> subscribers only. Please log in below.<p>If you don\'t have a subscription, <a href="'+subscribeLink+'" onclick="dataLayer.push({\'event\'\: \'modal_paywall_click\'});" style="color:blue">click here to sign up today.</a>',
-    modalBodyText = 'Receive full access to <strong>ShankenNewsDaily.com <br class="hidden-xs">AND</strong> get <strong>Shanken News Daily newsletter</strong> in your <br class="hidden-xs">inbox, every weekday morning. It\'s industry news <br class="hidden-xs">you won\'t ready anywhere else.<br><a href="'+subscribeLink+'" class="btn btn-default btn-lg" onclick="dataLayer.push({\'event\'\: \'modal_paywall_click\'});" style="color:#396b99; margin:20px auto;">START MY SUBSCRIPTION</a>' 
+    modalBodyText = 'Receive full access to <strong>ShankenNewsDaily.com <br class="hidden-xs">AND</strong> get <strong>Shanken News Daily newsletter</strong> in your <br class="hidden-xs">inbox, every weekday morning. It\'s industry news <br class="hidden-xs">you won\'t read anywhere else.<br><a href="'+subscribeLink+'" class="btn btn-default btn-lg" onclick="dataLayer.push({\'event\'\: \'modal_paywall_click\'});" style="color:#396b99; margin:20px auto;">START MY SUBSCRIPTION</a>' 
     modalBodyForm = '<br>Already a subscriber?  Log in.\
     <form class="form-inline">\
       <div id="flashMessageWarning" class="alert alert-danger" style="display: none;"></div>\
