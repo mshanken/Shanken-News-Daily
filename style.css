@@ -1118,8 +1118,32 @@ td#next {
 @media screen and (max-width: 320px){
 
 }
-
-
+.modal-content{
+	background-color: #396b99;
+}
+.modal-header {
+    border-bottom: none;
+}
+h4.modal-title{
+	font-size: 45px;
+	color:#fff;
+	text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.modal-body{
+	font-size: 23px;
+	color: #fff;
+	text-align: center;
+	line-height: 2.7rem;
+	font-weight: 300;
+}
+@media (min-width: 768px){
+	.modal-dialog {
+	    width: 700px !important;
+	    margin: 30px auto;
+	}
+}
 
 /* ========================================================= Resize ===*/
 .container, .one_full,.two_third,.one_third {

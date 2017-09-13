@@ -58,7 +58,7 @@ function removePaywallCookie() {
 
 // Centralize the generation of the modal body HTML
 function getModalBody(titleText, bodyText, eventNameGA) {
-  return '<div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true" style="color:black"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h4 class="modal-title" id="myModalLabel">'+titleText+'</h4></div><div class="modal-body">'+bodyText+'</div></div></div></div>';
+  return '<div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true" style="color:black; background: rgba(0,0,0,0.70);"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h4 class="modal-title" id="myModalLabel">'+titleText+'</h4></div><div class="modal-body">'+bodyText+'</div></div></div></div>';
 }
 
 // Is it a valid email string?
@@ -107,24 +107,26 @@ function performRestrictedBusinessLogic() {
   dataLayer.push({'event': 'modal_restricted_fire'});
 
   var subscribeLink = 'http://newsletters.shankennewsdaily.com/',
-    modalTitleText = 'Are You a Shanken News Daily Subscriber?',
-    modalBodyText = 'This website is available to <i>Shanken News Daily</i> subscribers only. Please log in below.<p>If you don\'t have a subscription, <a href="'+subscribeLink+'" onclick="dataLayer.push({\'event\'\: \'modal_paywall_click\'});" style="color:blue">click here to sign up today.</a>',
-    modalBodyForm = '<form class="form-horizontal">\
+    modalTitleText = 'Less Than $1 Per Day',
+    // modalBodyText = 'This website is available to <i>Shanken News Daily</i> subscribers only. Please log in below.<p>If you don\'t have a subscription, <a href="'+subscribeLink+'" onclick="dataLayer.push({\'event\'\: \'modal_paywall_click\'});" style="color:blue">click here to sign up today.</a>',
+    modalBodyText = 'Receive full access to ShankenNewsDaily.com AND <br class="hidden-xs">get Shanken News Daily newsletter in your inbox, every week<span class="hidden-xs">-</span><br class="hidden-xs">day morning. It\'s industry news<br class="hidden-xs"> you won\'t ready anywhere else.<br><a href="'+subscribeLink+'" class="btn btn-default btn-lg" onclick="dataLayer.push({\'event\'\: \'modal_paywall_click\'});" style="color:#396b99; margin:20px auto;">START MY SUBSCRIPTION</a>' 
+    modalBodyForm = '<br>Already a subscriber?  Log in.<form class="form-horizontal">\
     <div id="flashMessageWarning" class="alert alert-danger" style="display: none;"></div>\
     <div id="flashMessageSuccess" class="alert alert-success" style="display: none;"></div>\
-    <div class="form-group">\
-      <label for="subscriberEmail" class="col-sm-4 control-label">Email Address</label>\
-      <div class="col-sm-8">\
-        <input type="email" class="form-control" id="subscriberEmail"></div>\
+    <div class="form-group form-group-lg">\
+      <label for="subscriberEmail" class="control-label sr-only">Email Address</label>\
+      <div class="col-sm-12">\
+        <input type="email" class="form-control" id="subscriberEmail" placeholder="Email Address"></div>\
       </div>\
       <div class="col-sm-4 center-block" style="float:none">\
-        <button id="modalSubmit" class="btn btn-primary">Subscriber Log In</button>\
+        <button id="modalSubmit" class="btn btn-default">Subscriber Log In</button>\
       </div>\
     </div>\
     <br>\
     </form>',
+    modalImg = '<img class="img-responsive" src="http://SHANKDNEW-ElasticL-A0CNGVQLG2YI-1454536625.us-east-1.elb.amazonaws.com/wp-content/uploads/2017/09/SND-Blocker.gif" style="margin-bottom:10px;">',
     modalEventName = 'paywall';
-  var modalBody = getModalBody(modalTitleText, modalBodyText+'<hr>'+modalBodyForm, modalEventName);
+  var modalBody = getModalBody(modalTitleText, modalBodyText+modalBodyForm+modalImg, modalEventName);
   console.log('Modal Body:', modalBody);
   console.log('performExpiredSubBusinessLogic called');
   $('#footer').after(modalBody);
