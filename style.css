@@ -1118,30 +1118,34 @@ td#next {
 @media screen and (max-width: 320px){
 
 }
-.modal-content{
+#basicModal .modal-content{
 	background-color: #396b99;
 }
-.modal-header {
+#basicModal .modal-header {
     border-bottom: none;
 }
-h4.modal-title{
+#basicModal h4.modal-title{
 	font-size: 45px;
 	color:#fff;
 	text-align: center;
     text-transform: uppercase;
     font-weight: 600;
 }
-.modal-body{
+#basicModal .modal-body{
 	font-size: 23px;
 	color: #fff;
 	text-align: center;
 	line-height: 2.7rem;
 	font-weight: 300;
 }
+#basicModal .btn-group-lg>.btn, .btn-lg{
+	border-radius: 0;
+    margin-bottom: 13px;
+}
 @media (min-width: 768px){
-	.modal-dialog {
+	#basicModal .modal-dialog {
 	    width: 700px !important;
-	    margin: 30px auto;
+	    margin: 10% auto;
 	}
 }
 

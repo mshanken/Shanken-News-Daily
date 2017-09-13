@@ -2,14 +2,14 @@ function isPageBlocked() {
   // Add logic here later to check URL and see if page is restricted
   // Logic (ugly) is: contains index.php/DDDD
   
-  console.log('Calling isPageBlocked');
+  // console.log('Calling isPageBlocked');
   var loc = window.location.href;
 
   // manually override URLs for testing vs live URL string
   // Remove this before going live
   //loc = "http://www.shankennewsdaily.com/index.php/2015/10/30/13664/rothschild-familys-shared-champagne-brand-seeing-sharpened-u-s-focus/";
 
-  console.log('URL location is:',loc);
+  // console.log('URL location is:',loc);
 
   var urlRegex = new RegExp(/index\.php\/\d\d\d\d/); // Look for index.php/DDDD
 
@@ -33,26 +33,26 @@ function returnCookieInfo() {
 // Grab the cookie we use for handling modal logic
 function getPaywallCookie() {
   var cookieInfo = returnCookieInfo();
-  console.log('getPaywallCookie called with name of ', cookieInfo.name);
+  // console.log('getPaywallCookie called with name of ', cookieInfo.name);
   var cookie = Cookies.get(cookieInfo.name);
-  console.log('cookie value is:', cookie);
+  // console.log('cookie value is:', cookie);
   return cookie;
 }
 // Set the cookie if we need to
 function setPaywallCookie() {
   var cookieInfo = returnCookieInfo();
     value = true;
-    console.log('setPaywallCookie called with name of ', cookieInfo.name);
-    console.log('setPaywallCookie called with options of ', cookieInfo.options);
+    // console.log('setPaywallCookie called with name of ', cookieInfo.name);
+    // console.log('setPaywallCookie called with options of ', cookieInfo.options);
     cookieSet = Cookies.set(cookieInfo.name, value, cookieInfo.options);
-    console.log('cookieSet is:', cookieSet);
+    // console.log('cookieSet is:', cookieSet);
 }
 // Remove the cookie if we need to
 function removePaywallCookie() {
   var cookieInfo = returnCookieInfo();
-  console.log('removeCookie called');
+  // console.log('removeCookie called');
   var removed = Cookies.remove(cookieInfo.name,cookieInfo.options);
-  console.log('Cookie removed is:', removed);
+  // console.log('Cookie removed is:', removed);
 }
 
 
@@ -65,7 +65,7 @@ function getModalBody(titleText, bodyText, eventNameGA) {
 function validateEmail(email) {
   var emailRegex = new RegExp(/^.+@.+\..+$/);
   var validationResult = emailRegex.test(email);
-  console.log('Valid email, sort of?: ',validationResult);
+  // console.log('Valid email, sort of?: ',validationResult);
   return validationResult;
 }
 
@@ -110,25 +110,22 @@ function performRestrictedBusinessLogic() {
     modalTitleText = 'Less Than $1 Per Day',
     // modalBodyText = 'This website is available to <i>Shanken News Daily</i> subscribers only. Please log in below.<p>If you don\'t have a subscription, <a href="'+subscribeLink+'" onclick="dataLayer.push({\'event\'\: \'modal_paywall_click\'});" style="color:blue">click here to sign up today.</a>',
     modalBodyText = 'Receive full access to ShankenNewsDaily.com AND <br class="hidden-xs">get Shanken News Daily newsletter in your inbox, every week<span class="hidden-xs">-</span><br class="hidden-xs">day morning. It\'s industry news<br class="hidden-xs"> you won\'t ready anywhere else.<br><a href="'+subscribeLink+'" class="btn btn-default btn-lg" onclick="dataLayer.push({\'event\'\: \'modal_paywall_click\'});" style="color:#396b99; margin:20px auto;">START MY SUBSCRIPTION</a>' 
-    modalBodyForm = '<br>Already a subscriber?  Log in.<form class="form-horizontal">\
-    <div id="flashMessageWarning" class="alert alert-danger" style="display: none;"></div>\
-    <div id="flashMessageSuccess" class="alert alert-success" style="display: none;"></div>\
-    <div class="form-group form-group-lg">\
-      <label for="subscriberEmail" class="control-label sr-only">Email Address</label>\
-      <div class="col-sm-12">\
-        <input type="email" class="form-control" id="subscriberEmail" placeholder="Email Address"></div>\
+    modalBodyForm = '<br>Already a subscriber?  Log in.\
+    <form class="form-inline">\
+      <div id="flashMessageWarning" class="alert alert-danger" style="display: none;"></div>\
+      <div id="flashMessageSuccess" class="alert alert-success" style="display: none;"></div>\
+      <div class="form-group form-group-lg">\
+        <label for="subscriberEmail" class="control-label sr-only">Email Address</label>\
+        <input type="email" class="form-control" id="subscriberEmail" placeholder="Email Address">\
       </div>\
-      <div class="col-sm-4 center-block" style="float:none">\
-        <button id="modalSubmit" class="btn btn-default">Subscriber Log In</button>\
-      </div>\
-    </div>\
-    <br>\
+      <button id="modalSubmit" class="btn btn-default btn-lg">Log In</button>\
+      <br>\
     </form>',
-    modalImg = '<img class="img-responsive" src="http://SHANKDNEW-ElasticL-A0CNGVQLG2YI-1454536625.us-east-1.elb.amazonaws.com/wp-content/uploads/2017/09/SND-Blocker.gif" style="margin-bottom:10px;">',
+    modalImg = '</div><div><img class="img-responsive" src="http://SHANKDNEW-ElasticL-A0CNGVQLG2YI-1454536625.us-east-1.elb.amazonaws.com/wp-content/uploads/2017/09/SND-Blocker.gif" style="margin-bottom:13px;">',
     modalEventName = 'paywall';
   var modalBody = getModalBody(modalTitleText, modalBodyText+modalBodyForm+modalImg, modalEventName);
-  console.log('Modal Body:', modalBody);
-  console.log('performExpiredSubBusinessLogic called');
+  // console.log('Modal Body:', modalBody);
+  // console.log('performExpiredSubBusinessLogic called');
   $('#footer').after(modalBody);
   $('#basicModal').modal({show: true, backdrop: 'static', keyboard: false});  // Extra options needed for security
   console.log('Just tried to show the modal.');
@@ -284,7 +281,7 @@ function authenticateUser() {
 function authenticationFailed() {
 
   // User is not on the list - reject
-  console.log('User is invalid: reject them');
+  // console.log('User is invalid: reject them');
 
   // Google Analytics event fire
   dataLayer.push({'event': 'user_rejected'});
@@ -305,19 +302,19 @@ function doPaywall() {
   var restricted = isPageBlocked();
 
   if (restricted === false) {
-    console.log('Not a restricted page, exit immediately');
+    // console.log('Not a restricted page, exit immediately');
     return;
 
   } else {
 
     // Page IS restricted -- proceed
-    console.log('Restricted page: proceed with paywall logic');
+    // console.log('Restricted page: proceed with paywall logic');
 
     // Now, check to see if we have a user cookie
     var myPaywallCookie = getPaywallCookie();
-    console.log('myPaywallCookie is:',myPaywallCookie);
+    // console.log('myPaywallCookie is:',myPaywallCookie);
     if (myPaywallCookie !== undefined) {
-      console.log('Paywall cookie is set - have already done biz logic.  Break immediately.');
+      // console.log('Paywall cookie is set - have already done biz logic.  Break immediately.');
       return;
     } else {
 
