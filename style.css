@@ -1118,8 +1118,36 @@ td#next {
 @media screen and (max-width: 320px){
 
 }
-
-
+#basicModal .modal-content{
+	background-color: #396b99;
+}
+#basicModal .modal-header {
+    border-bottom: none;
+}
+#basicModal h4.modal-title{
+	font-size: 45px;
+	color:#fff;
+	text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#basicModal .modal-body{
+	font-size: 23px;
+	color: #fff;
+	text-align: center;
+	line-height: 2.7rem;
+	font-weight: 300;
+}
+#basicModal .btn-group-lg>.btn, .btn-lg{
+	border-radius: 0;
+    margin-bottom: 13px;
+}
+@media (min-width: 768px){
+	#basicModal .modal-dialog {
+	    width: 700px !important;
+	    margin: 10% auto;
+	}
+}
 
 /* ========================================================= Resize ===*/
 .container, .one_full,.two_third,.one_third {
