@@ -112,14 +112,14 @@ function performRestrictedBusinessLogic() {
     modalBodyText = 'Receive full access to <strong>ShankenNewsDaily.com <br class="hidden-xs">AND</strong> get <strong>Shanken News Daily newsletter</strong> in your <br class="hidden-xs">inbox, every weekday morning. It\'s industry news <br class="hidden-xs">you won\'t read anywhere else.<br><a href="'+subscribeLink+'" class="btn btn-default btn-lg" onclick="dataLayer.push({\'event\'\: \'modal_paywall_click\'});" style="color:#396b99; margin:20px auto;">START MY SUBSCRIPTION</a>' 
     modalBodyForm = '<br>Already a subscriber?  Log in.\
     <form class="form-inline">\
-      <div id="flashMessageWarning" class="alert alert-danger" style="display: none;"></div>\
-      <div id="flashMessageSuccess" class="alert alert-success" style="display: none;"></div>\
       <div class="form-group form-group-lg">\
         <label for="subscriberEmail" class="control-label sr-only">Email Address</label>\
         <input type="email" class="form-control" id="subscriberEmail" placeholder="Email Address" style="border-radius: 0;">\
       </div>\
       <button id="modalSubmit" class="btn btn-success btn-lg">Log In</button>\
       <br>\
+      <div id="flashMessageWarning" class="alert alert-danger" style="display: none;"></div>\
+      <div id="flashMessageSuccess" class="alert alert-success" style="display: none;"></div>\
     </form>',
     modalImg = '</div><div><img class="img-responsive" src="http://SHANKDNEW-ElasticL-A0CNGVQLG2YI-1454536625.us-east-1.elb.amazonaws.com/wp-content/uploads/2017/09/SND-Blocker.gif" style="margin-bottom:13px;">',
     modalEventName = 'paywall';
