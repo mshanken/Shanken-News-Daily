@@ -128,7 +128,7 @@ function performRestrictedBusinessLogic() {
   // console.log('performExpiredSubBusinessLogic called');
   $('#footer').after(modalBody);
   $('#basicModal').modal({show: true, backdrop: 'static', keyboard: false});  // Extra options needed for security
-  console.log('Just tried to show the modal.');
+  // console.log('Just tried to show the modal.');
 
   // Add listener to the modal button, but only after listener is shown
   $('#modalSubmit').click(function(event) {
