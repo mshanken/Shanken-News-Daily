@@ -36,17 +36,33 @@ function getPaywallCookie() {
   // console.log('getPaywallCookie called with name of ', cookieInfo.name);
   var cookie = Cookies.get(cookieInfo.name);
   // console.log('cookie value is:', cookie);
-  return cookie;
+  if(cookie !== undefined)
+    return parseInt(cookie);
+  else
+    return 1;    // first visit 
 }
 // Set the cookie if we need to
 function setPaywallCookie() {
-  var cookieInfo = returnCookieInfo();
-    value = true;
+    var cookieInfo = returnCookieInfo();
+    value = 99;
     // console.log('setPaywallCookie called with name of ', cookieInfo.name);
     // console.log('setPaywallCookie called with options of ', cookieInfo.options);
     cookieSet = Cookies.set(cookieInfo.name, value, cookieInfo.options);
     // console.log('cookieSet is:', cookieSet);
 }
+// Set the cookie if we need to
+function incrementPaywallCookie(oldValue) {
+    var cookieInfo = returnCookieInfo();
+    if (oldValue === undefined)
+        newValue = 1;
+    else
+        newValue = oldValue+1;
+    // console.log('setPaywallCookie called with name of ', cookieInfo.name);
+    // console.log('setPaywallCookie called with options of ', cookieInfo.options);
+    cookieSet = Cookies.set(cookieInfo.name, newValue, cookieInfo.options);
+    // console.log('cookieSet is:', cookieSet);
+}
+
 // Remove the cookie if we need to
 function removePaywallCookie() {
   var cookieInfo = returnCookieInfo();
@@ -298,6 +314,9 @@ function authenticationFailed() {
 
 function doPaywall() {
 
+  // How many pages for free?
+  var freePages = 3;
+
   // First, check to see if this page is restricted
   var restricted = isPageBlocked();
 
@@ -311,20 +330,22 @@ function doPaywall() {
     // console.log('Restricted page: proceed with paywall logic');
 
     // Now, check to see if we have a user cookie
-    var myPaywallCookie = getPaywallCookie();
-    // console.log('myPaywallCookie is:',myPaywallCookie);
-    if (myPaywallCookie !== undefined) {
-      // console.log('Paywall cookie is set - have already done biz logic.  Break immediately.');
-      return;
+    var myPaywallCookieValue = getPaywallCookie();
+    //console.log('myPaywallCookieValue is:',myPaywallCookieValue);
+    
+    // New biz logic as of Oct 30, 2017 - allow 5 free pages
+    if(myPaywallCookieValue == undefined || myPaywallCookieValue <= freePages) {
+        // First page through fifth are free, but increment counter
+        incrementPaywallCookie(myPaywallCookieValue);
+        //console.log('Free page - current value is:',myPaywallCookieValue);
+        return;
     } else {
-
-      // Restricted page, no cookie -- present login modal
-      performRestrictedBusinessLogic();
+        // Restricted page, more than 5th page
+        //console.log('Not free page - visit count is:',myPaywallCookieValue);
+        performRestrictedBusinessLogic();
 
     }
-
-    // // Set cookie so we don't do this more than once
-    // setPaywallCookie(cookieInfo);  
+  
   }
 }
 
