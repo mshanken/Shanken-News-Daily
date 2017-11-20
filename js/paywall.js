@@ -320,7 +320,7 @@ function doPaywall() {
   // First, check to see if this page is restricted
   var restricted = isPageBlocked();
 
-  if (restricted !== false) {
+  if (restricted === false) {
     // console.log('Not a restricted page, exit immediately');
     return;
 
