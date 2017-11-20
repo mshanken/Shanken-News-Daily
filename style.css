@@ -1123,6 +1123,11 @@ td#next {
 }
 #basicModal .modal-header {
     border-bottom: none;
+    background-color: #fff;
+}
+#basicModal .modal-header img{
+	margin-left: auto;
+	margin-right: auto;
 }
 #basicModal h4.modal-title{
 	font-size: 45px;
@@ -1137,6 +1142,34 @@ td#next {
 	text-align: center;
 	line-height: 2.7rem;
 	font-weight: 300;
+}
+#basicModal .modal-body span{
+	font-size: 30px;
+}
+#basicModal .modal-body .block-limitedoffer{
+	background-color: #fff;
+	color:#104878;
+	text-transform: uppercase;
+	font-weight: 900;
+	font-size: 26px;
+	border: 5px solid #daecec;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+}
+#basicModal .modal-body .block-limitedoffer a.btn.btn-primary, #basicModal .modal-body .block-limitedoffer a:hover.btn.btn-primary, #basicModal .modal-body .block-limitedoffer a:visited.btn.btn-primary{
+	background-color: #daecec;
+	color:#104878;
+	font-weight: 900;
+	text-transform: uppercase;
+	font-size: 24px;
+	margin: 10px auto;
+	border-color: #a5b0b0;
+	border-radius: 2px;
+	border-top-width: 2px;
+	border-right-width: 2px;
+	white-space: normal;
 }
 #basicModal .btn-group-lg>.btn, .btn-lg{
 	border-radius: 0;

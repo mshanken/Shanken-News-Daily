@@ -123,9 +123,9 @@ function performRestrictedBusinessLogic() {
   dataLayer.push({'event': 'modal_restricted_fire'});
 
   var subscribeLink = 'http://newsletters.shankennewsdaily.com/',
-    modalTitleText = 'Less Than $1 Per Day',
-    // modalBodyText = 'This website is available to <i>Shanken News Daily</i> subscribers only. Please log in below.<p>If you don\'t have a subscription, <a href="'+subscribeLink+'" onclick="dataLayer.push({\'event\'\: \'modal_paywall_click\'});" style="color:blue">click here to sign up today.</a>',
-    modalBodyText = 'Receive full access to <strong>ShankenNewsDaily.com <br class="hidden-xs">AND</strong> get <strong>Shanken News Daily newsletter</strong> in your <br class="hidden-xs">inbox, every weekday morning. It\'s industry news <br class="hidden-xs">you won\'t read anywhere else.<br><a href="'+subscribeLink+'" class="btn btn-default btn-lg" onclick="dataLayer.push({\'event\'\: \'modal_paywall_click\'});" style="color:#396b99; margin:20px auto;">START MY SUBSCRIPTION</a>' 
+    modalTitleText = '<a href="'+subscribeLink+'" onclick="dataLayer.push({\'event\'\: \'modal_paywall_click\'});"><img class="img-responsive" src="http://SHANKDNEW-ElasticL-A0CNGVQLG2YI-1454536625.us-east-1.elb.amazonaws.com/wp-content/uploads/2017/11/SDN_logo-Blocker.gif"></a>',
+    // modalBodyText = 'Receive full access to <strong>ShankenNewsDaily.com <br class="hidden-xs">AND</strong> get <strong>Shanken News Daily newsletter</strong> in your <br class="hidden-xs">inbox, every weekday morning. It\'s industry news <br class="hidden-xs">you won\'t read anywhere else.<br><a href="'+subscribeLink+'" class="btn btn-default btn-lg" onclick="dataLayer.push({\'event\'\: \'modal_paywall_click\'});" style="color:#396b99; margin:20px auto;">START MY SUBSCRIPTION</a>' 
+    modalBodyText = '<span>Continue reading this article with a subscription to Shanken News Daily.</span><div class="block-limitedoffer">Limited Time Offer<br><a href="'+subscribeLink+'" class="btn btn-primary" onclick="dataLayer.push({\'event\'\: \'modal_paywall_click\'});">$1 for 30 days </a></div>'
     modalBodyForm = '<br>Already a subscriber?  Log in.\
     <form class="form-inline">\
       <div class="form-group form-group-lg">\
@@ -320,7 +320,7 @@ function doPaywall() {
   // First, check to see if this page is restricted
   var restricted = isPageBlocked();
 
-  if (restricted === false) {
+  if (restricted !== false) {
     // console.log('Not a restricted page, exit immediately');
     return;
 
