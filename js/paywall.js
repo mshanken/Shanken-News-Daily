@@ -36,17 +36,33 @@ function getPaywallCookie() {
   // console.log('getPaywallCookie called with name of ', cookieInfo.name);
   var cookie = Cookies.get(cookieInfo.name);
   // console.log('cookie value is:', cookie);
-  return cookie;
+  if(cookie !== undefined)
+    return parseInt(cookie);
+  else
+    return 1;    // first visit 
 }
 // Set the cookie if we need to
 function setPaywallCookie() {
-  var cookieInfo = returnCookieInfo();
-    value = true;
+    var cookieInfo = returnCookieInfo();
+    value = 99;
     // console.log('setPaywallCookie called with name of ', cookieInfo.name);
     // console.log('setPaywallCookie called with options of ', cookieInfo.options);
     cookieSet = Cookies.set(cookieInfo.name, value, cookieInfo.options);
     // console.log('cookieSet is:', cookieSet);
 }
+// Set the cookie if we need to
+function incrementPaywallCookie(oldValue) {
+    var cookieInfo = returnCookieInfo();
+    if (oldValue === undefined)
+        newValue = 1;
+    else
+        newValue = oldValue+1;
+    // console.log('setPaywallCookie called with name of ', cookieInfo.name);
+    // console.log('setPaywallCookie called with options of ', cookieInfo.options);
+    cookieSet = Cookies.set(cookieInfo.name, newValue, cookieInfo.options);
+    // console.log('cookieSet is:', cookieSet);
+}
+
 // Remove the cookie if we need to
 function removePaywallCookie() {
   var cookieInfo = returnCookieInfo();
@@ -106,10 +122,10 @@ function performRestrictedBusinessLogic() {
   // Fire GTM event by pushing data to dataLayer
   dataLayer.push({'event': 'modal_restricted_fire'});
 
-  var subscribeLink = 'http://newsletters.shankennewsdaily.com/',
-    modalTitleText = 'Less Than $1 Per Day',
-    // modalBodyText = 'This website is available to <i>Shanken News Daily</i> subscribers only. Please log in below.<p>If you don\'t have a subscription, <a href="'+subscribeLink+'" onclick="dataLayer.push({\'event\'\: \'modal_paywall_click\'});" style="color:blue">click here to sign up today.</a>',
-    modalBodyText = 'Receive full access to <strong>ShankenNewsDaily.com <br class="hidden-xs">AND</strong> get <strong>Shanken News Daily newsletter</strong> in your <br class="hidden-xs">inbox, every weekday morning. It\'s industry news <br class="hidden-xs">you won\'t read anywhere else.<br><a href="'+subscribeLink+'" class="btn btn-default btn-lg" onclick="dataLayer.push({\'event\'\: \'modal_paywall_click\'});" style="color:#396b99; margin:20px auto;">START MY SUBSCRIPTION</a>' 
+  var subscribeLink = 'https://msh.dragonforms.com/QXnew30d1d',
+    modalTitleText = '<a href="'+subscribeLink+'" onclick="dataLayer.push({\'event\'\: \'modal_paywall_click\'});"><img class="img-responsive" src="http://SHANKDNEW-ElasticL-A0CNGVQLG2YI-1454536625.us-east-1.elb.amazonaws.com/wp-content/uploads/2017/11/SDN_logo-Blocker.gif"></a>',
+    // modalBodyText = 'Receive full access to <strong>ShankenNewsDaily.com <br class="hidden-xs">AND</strong> get <strong>Shanken News Daily newsletter</strong> in your <br class="hidden-xs">inbox, every weekday morning. It\'s industry news <br class="hidden-xs">you won\'t read anywhere else.<br><a href="'+subscribeLink+'" class="btn btn-default btn-lg" onclick="dataLayer.push({\'event\'\: \'modal_paywall_click\'});" style="color:#396b99; margin:20px auto;">START MY SUBSCRIPTION</a>' 
+    modalBodyText = '<span>Continue reading this article with a subscription to Shanken News Daily.</span><div class="block-limitedoffer">Limited Time Offer<br><a href="'+subscribeLink+'" class="btn btn-primary" onclick="dataLayer.push({\'event\'\: \'modal_paywall_click\'});">$1 for 30 days </a></div>'
     modalBodyForm = '<br>Already a subscriber?  Log in.\
     <form class="form-inline">\
       <div class="form-group form-group-lg">\
@@ -298,6 +314,9 @@ function authenticationFailed() {
 
 function doPaywall() {
 
+  // How many pages for free?
+  var freePages = 3;
+
   // First, check to see if this page is restricted
   var restricted = isPageBlocked();
 
@@ -311,20 +330,22 @@ function doPaywall() {
     // console.log('Restricted page: proceed with paywall logic');
 
     // Now, check to see if we have a user cookie
-    var myPaywallCookie = getPaywallCookie();
-    // console.log('myPaywallCookie is:',myPaywallCookie);
-    if (myPaywallCookie !== undefined) {
-      // console.log('Paywall cookie is set - have already done biz logic.  Break immediately.');
-      return;
+    var myPaywallCookieValue = getPaywallCookie();
+    //console.log('myPaywallCookieValue is:',myPaywallCookieValue);
+    
+    // New biz logic as of Oct 30, 2017 - allow 5 free pages
+    if(myPaywallCookieValue == undefined || myPaywallCookieValue <= freePages) {
+        // First page through fifth are free, but increment counter
+        incrementPaywallCookie(myPaywallCookieValue);
+        //console.log('Free page - current value is:',myPaywallCookieValue);
+        return;
     } else {
-
-      // Restricted page, no cookie -- present login modal
-      performRestrictedBusinessLogic();
+        // Restricted page, more than 5th page
+        //console.log('Not free page - visit count is:',myPaywallCookieValue);
+        performRestrictedBusinessLogic();
 
     }
-
-    // // Set cookie so we don't do this more than once
-    // setPaywallCookie(cookieInfo);  
+  
   }
 }
 
