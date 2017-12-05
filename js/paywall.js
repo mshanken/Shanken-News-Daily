@@ -44,7 +44,7 @@ function getPaywallCookie() {
 // Set the cookie if we need to
 function setPaywallCookie() {
     var cookieInfo = returnCookieInfo();
-    value = 'member';
+    value = '999999';
     // console.log('setPaywallCookie called with name of ', cookieInfo.name);
     // console.log('setPaywallCookie called with options of ', cookieInfo.options);
     cookieSet = Cookies.set(cookieInfo.name, value, cookieInfo.options);
@@ -334,7 +334,7 @@ function doPaywall() {
     //console.log('myPaywallCookieValue is:',myPaywallCookieValue);
     
     // Allow logged in users to get through
-    if(myPaywallCookieValue == 'member') {
+    if(myPaywallCookieValue == '999999') {
         return;
     } else if(myPaywallCookieValue == undefined || myPaywallCookieValue <= freePages) {
         // New biz logic as of Oct 30, 2017 - allow 5 free pages
