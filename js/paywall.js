@@ -44,7 +44,7 @@ function getPaywallCookie() {
 // Set the cookie if we need to
 function setPaywallCookie() {
     var cookieInfo = returnCookieInfo();
-    value = 99;
+    value = 'member';
     // console.log('setPaywallCookie called with name of ', cookieInfo.name);
     // console.log('setPaywallCookie called with options of ', cookieInfo.options);
     cookieSet = Cookies.set(cookieInfo.name, value, cookieInfo.options);
@@ -333,17 +333,19 @@ function doPaywall() {
     var myPaywallCookieValue = getPaywallCookie();
     //console.log('myPaywallCookieValue is:',myPaywallCookieValue);
     
-    // New biz logic as of Oct 30, 2017 - allow 5 free pages
-    if(myPaywallCookieValue == undefined || myPaywallCookieValue <= freePages) {
+    // Allow logged in users to get through
+    if(myPaywallCookieValue == 'member') {
+        return;
+    } else if(myPaywallCookieValue == undefined || myPaywallCookieValue <= freePages) {
+        // New biz logic as of Oct 30, 2017 - allow 5 free pages
         // First page through fifth are free, but increment counter
         incrementPaywallCookie(myPaywallCookieValue);
         //console.log('Free page - current value is:',myPaywallCookieValue);
         return;
     } else {
-        // Restricted page, more than 5th page
+        // Restricted page, not member, more than 5th page
         //console.log('Not free page - visit count is:',myPaywallCookieValue);
         performRestrictedBusinessLogic();
-
     }
   
   }
