@@ -41,7 +41,7 @@
 		<?php endif; ?>
 	<p><?php edit_post_link( __( 'Edit', 'twentyten' ), '', '' ); ?></p>
 
-		<p><a href="http://www.shankennewsdaily.com/index.php/impact-databank-report/" title="Order Impact Databank" class="article-promo">Get your first look at 2016 data and 2017 projections for the wine and spirits industries. <span>Order your 2017 Impact Databank Reports</span>. Click here.</a></p>
+		<p><a href="http://www.shankennewsdaily.com/index.php/impact-databank-report/" title="Order Impact Databank" class="article-promo">Get your first look at 2017 data and 2018 projections for the wine and spirits industries. <span>Order your 2018 Impact Databank Reports</span>. Click here.</a></p>
 
 		</section>
 		<p><span id="prevlink">Previous&nbsp;:&nbsp;<?php previous_post_link( '%link', '%title ' . __( '' ) . '' ); ?></span>
