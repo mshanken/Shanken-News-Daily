@@ -706,8 +706,13 @@ section.post img{
 section p {
 	margin: 8px 0;
 }
+
+.post p {
+	font-size: 16px;
+}
+
 .posted {
-	font-size: 13px;
+	font-size: 14px;
 	color: #595959;
 }
 span#nextlink {
