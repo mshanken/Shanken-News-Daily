@@ -194,7 +194,7 @@ textarea,
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
-	color: #808080;
+	color: #595959;
 	display: inline-block;
 	font-size: 13px;
 	/*height: 18px;*/
@@ -203,6 +203,11 @@ textarea,
 	padding: 4px;
 	width: 270px;
 	vertical-align:baseline;
+}
+
+::placeholder {
+	color: #595959;
+	opacity: 1;
 }
 select, input[type=file] {
   height: 27px;
@@ -562,9 +567,9 @@ blockquote {
 	line-height: inherit;
 	margin: 0 0 8px 8px;
 }
-a:link {color:#cc9966;color:rgba(166,125,75,0.9); text-decoration: none;} /*unvisited*/
-a:visited {color:#cc9966;color:rgba(166,125,75,0.9); text-decoration: none;} /*visited*/
-a:hover {color:#3399cc;color:rgba(111,146,168,1); text-decoration: none;} /*mouse over*/
+a:link {color:#cc9966;color: #774F28; text-decoration: none;} /*unvisited*/
+a:visited {color:#774F28; text-decoration: none;} /*visited*/
+a:hover {color:#265A87; text-decoration: none;} /*mouse over*/
 a:active {color:#444; text-decoration: none;} /*selected*/
 h1, h2, h3, h4, h5, h6 {
 	line-height: 1.2;
@@ -646,8 +651,8 @@ nav li a:hover, .current_page_item a, #subpage a:hover {
 	    text-shadow: none;
 	    background-image: none;
 	    box-shadow: none;
-	    color:#6699cc;
-	    color:#6f92a8;
+	    color:#265A87;
+	    color:#2D5986;
 }
 nav li a {
 	    text-shadow: none;
@@ -666,11 +671,16 @@ nav li a {
 	    border-top-left-radius: 4px;
 	    box-shadow: 0px -1px 1px rgba(228,228,228,0.6) inset;
 }
+
+nav li a {
+	color: #6F4A25 !important;
+}
+
 nav #subpage a {
 		background-color: #cc9966;
     	background-color:#AE8F69;
-    	background-color: rgba(166,125,75,0.6);
-    	color: #fff;
+    	background-color: #774F28;
+    	color: #fff !important;
 }
 /* ========================================================= Content Area ===*/
 section.post {
@@ -698,7 +708,7 @@ section p {
 }
 .posted {
 	font-size: 13px;
-	color: #888;
+	color: #595959;
 }
 span#nextlink {
 	display: inline;
@@ -783,7 +793,7 @@ h3.widget-title {
 	border-bottom: 1px dashed #ccc;
 }
 h3.widget-title a:link {color:rgba(0,70,124,1); text-decoration: none;}
-h3.widget-title a:hover {color:rgba(111,146,168,1); text-decoration: none;}
+h3.widget-title a:hover {color:#265A87; text-decoration: none;}
 h3.widget-title a:visited {color:rgba(0,70,124,1); text-decoration: none;}
 h3.widget-title a:active {color:rgba(0,70,124,1); text-decoration: none;}
 table {
