@@ -525,7 +525,7 @@ span#prevlink {
 html, body {background-color: #ffffff;}
 
 body {
-	color: #444444;
+	color: #000;
 	font-family: 'Roboto', 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif;
 	text-rendering: optimizeLegibility;
 }
@@ -713,7 +713,7 @@ section p {
 
 .posted {
 	font-size: 14px;
-	color: #595959;
+	color: #333;
 }
 span#nextlink {
 	display: inline;
@@ -1206,5 +1206,9 @@ td#next {
 
 /* Marvin */
 h2 a:link {
-	color: rgba(0,70,124,0.8);
+	color: rgba(0,70,124,0.9);
+}
+
+h2 a:visited {
+	color: rgba(0,70,124,0.7);
 }
