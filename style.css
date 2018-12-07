@@ -1203,3 +1203,8 @@ td#next {
 	-moz-transition:all .2s ease-out;
 	transition:all .2s ease-out;
 }
+
+/* Marvin */
+h2 a:link {
+	color: rgba(0,70,124,0.8);
+}
