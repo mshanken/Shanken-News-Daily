@@ -1206,9 +1206,9 @@ td#next {
 
 /* Marvin */
 h2 a:link {
-	color: rgba(0,70,124,0.9);
+	color: rgba(0,70,124,1);
 }
 
 h2 a:visited {
-	color: rgba(0,70,124,0.7);
+	color: rgb(96, 135, 165);
 }
