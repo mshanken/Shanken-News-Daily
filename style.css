@@ -526,7 +526,7 @@ html, body {background-color: #ffffff;}
 
 body {
 	color: #444444;
-	font-family: 'Open Sans', 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif;
+	font-family: 'Roboto', 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif;
 	text-rendering: optimizeLegibility;
 }
 label {
@@ -573,7 +573,7 @@ a:hover {color:#265A87; text-decoration: none;} /*mouse over*/
 a:active {color:#444; text-decoration: none;} /*selected*/
 h1, h2, h3, h4, h5, h6 {
 	line-height: 1.2;
-	font-family: 'Open Sans', 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif;
+	font-family: 'Roboto', 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif;
 	letter-spacing: normal;
 	font-weight: 400;
 	color:#00457c;
@@ -609,7 +609,7 @@ img.alignleft {float: left; padding: 0; margin: 0px 8px 0px 0px; display: inline
 }
 #tagline h2{
 	font-size: 23px;
-	font-family: 'Open Sans', 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif;
+	font-family: 'Roboto', 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif;
 	font-weight: bold;
 	letter-spacing: normal;
 	line-height: 1.2;
@@ -625,7 +625,7 @@ nav.one_full {
 nav {
 		font-size: 14px;
 		font-weight: normal;
-		font-family: 'Open Sans', 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif;
+		font-family: 'Roboto', 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif;
 		background-color: #d9e1e7;
 		background-color: rgba(237,242,246,1);
 	   	background-image: url(/wp-content/themes/Shanken-News-Daily/img/noise.png);
@@ -735,7 +735,7 @@ a.addthis_button_preferred_1:hover, a.addthis_button_preferred_2:hover, a.addthi
 }
 
 #sidebar {
-	font-family: 'Open Sans', 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif;
+	font-family: 'Roboto', 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif;
 	color: #a0a0a0;
 	background-color: #FAFAFA;
 	background: -moz-linear-gradient(top, rgba(250,250,250,1) 50%, rgba(255,255,255,0) 100%); /* FF3.6+ */
@@ -802,7 +802,7 @@ h3.widget-title a:hover {color:#265A87; text-decoration: none;}
 h3.widget-title a:visited {color:rgba(0,70,124,1); text-decoration: none;}
 h3.widget-title a:active {color:rgba(0,70,124,1); text-decoration: none;}
 table {
-	font-family: 'Open Sans', 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif;
+	font-family: 'Roboto', 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif;
 	border-collapse: separate;
 	font-size: 12px;
 	line-height: 1;
@@ -861,7 +861,7 @@ a.article-promo span{
 }
 #footer p {margin: 2px 0;}
 #footer {
-	font-family: 'Open Sans', 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif;
+	font-family: 'Roboto', 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif;
 	text-align: center;
 	margin-top: 22px;
 	padding: 12px 0;
@@ -1013,7 +1013,7 @@ table#wp-calendar {
 }
 table#wp-calendar, #wp-calendar tbody, #wp-calendar tfoot, #wp-calendar thead, #wp-calendar tr, #wp-calendar th, #wp-calendar td {
 	color: #565656;
-	font-family: 'Open Sans', 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif;
+	font-family: 'Roboto', 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif;
 /* 	border: 1px solid rgba(207,207,207,0.4); */
 	line-height: 1.5;
 	text-align: center;
