@@ -86,7 +86,7 @@
 							<ul>
 								<li <?php if ( is_home()){echo " class=\"current_page_item\"";}?>><a href="/" title="NEWS HOME">NEWS</a></li>
 					<?php wp_list_pages('exclude=579&title_li='); ?>
-	 							<li> <a href="/index.php/tag/cannabis/" title="Cannabis Articles">Cannabis</a>
+	 							<li> <a href="/index.php/tag/cannabis/" title="Cannabis Articles">Cannabis Edition</a>
 								<li><a href="http://pubform.shankennewsdaily.com/" title="M. Shanken Communications Publications">PUBLICATIONS</a></li>
 								<li id="subpage"><a href="http://newsletters.shankennewsdaily.com" title="Subscribe to Shanken News Daily">SUBSCRIBE to SND</a></li>
 							</ul>
