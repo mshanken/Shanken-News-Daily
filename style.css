@@ -1212,3 +1212,9 @@ h2 a:link {
 h2 a:visited {
 	color: #445764;
 }
+
+
+.cannabis-tab {
+	color: white !important;
+	background: #507e38;
+}
