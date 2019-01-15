@@ -1216,5 +1216,9 @@ h2 a:visited {
 
 .cannabis-tab {
 	color: white !important;
-	background: #507e38;
+	background: #477a2b;
+}
+
+.cannabis-tab:hover {
+	background: #2e4124;
 }
