@@ -26,16 +26,19 @@
 	 */ ?>
 <?php while ( have_posts() ) : the_post(); ?>
 
-<section class="post clearfix">
+
 	<?php /* How to display posts in the Gallery category. */ ?>
 
-	<?php if ( in_category( _x('gallery', 'gallery category slug', 'twentyten') ) ) : ?>
 
+
+	<?php if ( in_category( _x('gallery', 'gallery category slug', 'twentyten') ) ) : ?>
+	<section class="post clearfix">
 	<h2><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'twentyten' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 	<span class="posted"><?php echo get_the_date(); ?></span>
 
+
 <?php if ( post_password_required() ) : ?>
-				<?php the_content(); ?>	
+				<?php the_content(); ?>
 
 <?php else : ?>
 <?php
@@ -51,15 +54,15 @@
 
 	<?php the_excerpt(); ?>
 	<?php endif; ?>
-	
+
 	<a href="<?php echo get_term_link( _x('gallery', 'gallery category slug', 'twentyten'), 'category' ); ?>" title="<?php esc_attr_e( 'View posts in the Gallery category', 'twentyten' ); ?>"><?php _e( 'More Galleries', 'twentyten' ); ?></a>
 
 	<?php edit_post_link( __( 'Edit', 'twentyten' ), '|', '' ); ?>
-
+	</section>
 	<?php /* How to display posts in the asides category */ ?>
 
 	<?php elseif ( in_category( _x('asides', 'asides category slug', 'twentyten') ) ) : ?>
-
+	<section class="post clearfix">
 		<?php if ( is_archive() || is_search() ) : // Display excerpts for archives and search. ?>
 			<?php the_excerpt(); ?>
 		<?php else : ?>
@@ -67,42 +70,43 @@
 		<?php endif; ?>
 
 				<span class="posted"><?php echo get_the_date(); ?></span>
-				
-				<?php edit_post_link( __( 'Edit', 'twentyten' ), '| ', '' ); ?>
 
+				<?php edit_post_link( __( 'Edit', 'twentyten' ), '| ', '' ); ?>
+	</section>
+	<?php elseif( is_front_page() && is_home() && has_tag('cannabis')): ?>
 
 <?php /* How to display all other posts. */ ?>
 
 	<?php else : ?>
-			
+	<section class="post clearfix">
 			<h2><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'twentyten' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
-			
+
 			<?php if ( is_archive() || is_search() ) : // Only display excerpts for archives and search. ?>
 			<?php the_content( __( 'Continue reading &rarr;', 'twentyten' ) ); ?>
 	<?php else : ?>
 			<?php the_content( __( 'Continue reading &rarr;', 'twentyten' ) ); ?>
 			<?php wp_link_pages( array( 'before' => '' . __( 'Pages:', 'twentyten' ), 'after' => '' ) ); ?>
 	<?php endif; ?>
-				
+
 			<span class="posted">
 			<?php if ( count( get_the_category() ) ) : ?>
 			<?php printf( __( 'Posted in %2$s', 'twentyten' ), 'entry-utility-prep entry-utility-prep-cat-links', get_the_category_list( ', ' ) ); ?>
-					
+
 			<?php $arc_year = get_the_time('Y'); ?>
 			<?php $arc_month = get_the_time('m'); ?>
 			<?php $arc_day = get_the_time('d'); ?>
 			on
 			<a href="<?php echo get_day_link($arc_year, $arc_month, $arc_day); ?>" title="Click to see that day's daily archive"><?php echo get_the_date(); ?></a>
-					
+
 			<?php endif; ?>
-				
+
 			<?php edit_post_link( __( 'Edit', 'twentyten' ), '| ', '' ); ?>
 			</span>
 
-	
 
+			</section>
 	<?php endif; // This was the if statement that broke the loop into three parts based on categories. ?>
-</section>
+
 
 <?php endwhile; // End the loop. Whew. ?>
 <?php /* Display navigation to next/previous pages when applicable */ ?>
