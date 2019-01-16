@@ -20,7 +20,11 @@
 
 <?php endif; ?>
 
-<a href="http://newsletters.shankennewsdaily.com/" title="Subscribe to Shanken News Daily’s Email Newsletter" style="display:block; padding:0.56em 0; margin: 0; font-style:italic; font-weight:bold;font-size:1.1em;line-height:1.28;">Subscribe to Shanken News Daily’s Email Newsletter, delivered to your inbox each morning.</a>
+<a href="http://newsletters.shankennewsdaily.com/" title="Subscribe to Shanken News Daily’s Email Newsletter" style="display:block; padding:0.56em 0; margin: 0; font-style:italic; font-weight:bold;font-size:1.1em;line-height:1.28;">Subscribe to Shanken News Daily’s Email Newsletter, delivered to your inbox each morning.
+<?php if (has_tag('cannabis')):?>
+You will also receive the Cannabis edition as part of your subscription.
+				<?php endif; ?>
+</a>
 
 <!-- AddThis Button BEGIN -->
 <ul class="addthis_toolbox addthis_default_style addthis_32x32_style">
@@ -41,7 +45,7 @@
 		<?php endif; ?>
 	<p><?php edit_post_link( __( 'Edit', 'twentyten' ), '', '' ); ?></p>
 
-		<p><a href="http://www.shankennewsdaily.com/index.php/impact-databank-report/" title="Order Impact Databank" class="article-promo">Get your first look at 2017 data and 2018 projections for the wine and spirits industries. <span>Order your 2018 Impact Databank Reports</span>. Click here.</a></p>
+		<p><a href="http://www.shankennewsdaily.com/index.php/impact-databank-report/" title="Order Impact Databank" class="article-promo">Get your first look at 2017 data and 2018 projections for the wine and spirits industries. <span>Order your 2018 Impact Databank Reports</span>. Click here.</a> </p>
 
 		</section>
 		<p><span id="prevlink">Previous&nbsp;:&nbsp;<?php previous_post_link( '%link', '%title ' . __( '' ) . '' ); ?></span>
