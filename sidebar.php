@@ -1,4 +1,5 @@
 <div id="sidebar" class="one_third">
+
 	<form id="search-form-inline" action="/" method="get" role="search">
 		<div class="search-wrap">
 			<div class="search-input">
@@ -49,4 +50,9 @@
 				<?php dynamic_sidebar( 'secondary-widget-area' ); ?>
 			</div>
 		<?php endif; ?>
+
+		<p style="padding: 10px; color: #333">
+			Contact our editorial team at <a href="mailto:shankennewsdaily@mshanken.com">shankennewsdaily@mshanken.com</a>.
+		</p>
+
 </div><!--/#sidebar-->
