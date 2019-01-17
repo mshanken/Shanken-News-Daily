@@ -64,7 +64,11 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?>
+<?php if (has_tag('cannabis') && is_single() ):?>
+	data-tag="cannabis"
+	<?php endif; ?>
+>
 
 <script>
   dataLayer = [];
