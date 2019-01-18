@@ -1214,11 +1214,10 @@ h2 a:visited {
 }
 
 
-.cannabis-tab {
+.tag-cannabis .cannabis-tab,
+.cannabis-tab:hover,
+[data-tag="cannabis"] .cannabis-tab
+{
 	color: white !important;
 	background: #477a2b;
-}
-
-.cannabis-tab:hover {
-	background: #2e4124;
 }
