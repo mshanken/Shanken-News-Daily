@@ -654,6 +654,11 @@ nav li a:hover, .current_page_item a, #subpage a:hover {
 	    color:#265A87;
 	    color:#2D5986;
 }
+
+#subpage a:hover {
+	color: #6F4A25 !important;
+}
+
 nav li a {
 	    text-shadow: none;
 	    border-left: 1px solid rgba(244,244,244,1);
@@ -682,6 +687,8 @@ nav #subpage a {
     	background-color: #774F28;
     	color: #fff !important;
 }
+
+
 /* ========================================================= Content Area ===*/
 section.post {
 	padding: 0px 0 4px;
