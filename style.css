@@ -194,7 +194,7 @@ textarea,
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
-	color: #808080;
+	color: #595959;
 	display: inline-block;
 	font-size: 13px;
 	/*height: 18px;*/
@@ -203,6 +203,11 @@ textarea,
 	padding: 4px;
 	width: 270px;
 	vertical-align:baseline;
+}
+
+::placeholder {
+	color: #595959;
+	opacity: 1;
 }
 select, input[type=file] {
   height: 27px;
@@ -520,8 +525,8 @@ span#prevlink {
 html, body {background-color: #ffffff;}
 
 body {
-	color: #444444;
-	font-family: 'Open Sans', 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif;
+	color: #000;
+	font-family: 'Roboto', 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif;
 	text-rendering: optimizeLegibility;
 }
 label {
@@ -562,13 +567,13 @@ blockquote {
 	line-height: inherit;
 	margin: 0 0 8px 8px;
 }
-a:link {color:#cc9966;color:rgba(166,125,75,0.9); text-decoration: none;} /*unvisited*/
-a:visited {color:#cc9966;color:rgba(166,125,75,0.9); text-decoration: none;} /*visited*/
-a:hover {color:#3399cc;color:rgba(111,146,168,1); text-decoration: none;} /*mouse over*/
+a:link {color:#cc9966;color: #774F28; text-decoration: none;} /*unvisited*/
+a:visited {color:#774F28; text-decoration: none;} /*visited*/
+a:hover {color:#265A87; text-decoration: none;} /*mouse over*/
 a:active {color:#444; text-decoration: none;} /*selected*/
 h1, h2, h3, h4, h5, h6 {
 	line-height: 1.2;
-	font-family: 'Open Sans', 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif;
+	font-family: 'Roboto', 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif;
 	letter-spacing: normal;
 	font-weight: 400;
 	color:#00457c;
@@ -604,7 +609,7 @@ img.alignleft {float: left; padding: 0; margin: 0px 8px 0px 0px; display: inline
 }
 #tagline h2{
 	font-size: 23px;
-	font-family: 'Open Sans', 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif;
+	font-family: 'Roboto', 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif;
 	font-weight: bold;
 	letter-spacing: normal;
 	line-height: 1.2;
@@ -620,7 +625,7 @@ nav.one_full {
 nav {
 		font-size: 14px;
 		font-weight: normal;
-		font-family: 'Open Sans', 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif;
+		font-family: 'Roboto', 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif;
 		background-color: #d9e1e7;
 		background-color: rgba(237,242,246,1);
 	   	background-image: url(/wp-content/themes/Shanken-News-Daily/img/noise.png);
@@ -630,7 +635,7 @@ nav {
 		box-shadow: 0px -1px 2px rgba(148,148,148,0.2) inset;
 }
 nav ul {
-		float: right;
+		float: left;
 		margin: 8px 8px 0 4px;
 }
 nav ul li {
@@ -646,16 +651,21 @@ nav li a:hover, .current_page_item a, #subpage a:hover {
 	    text-shadow: none;
 	    background-image: none;
 	    box-shadow: none;
-	    color:#6699cc;
-	    color:#6f92a8;
+	    color:#265A87;
+	    color:#2D5986;
 }
+
+#subpage a:hover {
+	color: #6F4A25 !important;
+}
+
 nav li a {
 	    text-shadow: none;
 	    border-left: 1px solid rgba(244,244,244,1);
 	    text-decoration: none;
 	    text-transform: uppercase;
 	    float: left;
-	    padding: 4px 18px;
+	    padding: 4px 14px;
 	    margin-left: 1px;
 	    background-color:#f4f4f4;
 	    -webkit-border-top-right-radius: 4px;
@@ -666,12 +676,19 @@ nav li a {
 	    border-top-left-radius: 4px;
 	    box-shadow: 0px -1px 1px rgba(228,228,228,0.6) inset;
 }
+
+nav li a {
+	color: #6F4A25 !important;
+}
+
 nav #subpage a {
 		background-color: #cc9966;
     	background-color:#AE8F69;
-    	background-color: rgba(166,125,75,0.6);
-    	color: #fff;
+    	background-color: #774F28;
+    	color: #fff !important;
 }
+
+
 /* ========================================================= Content Area ===*/
 section.post {
 	padding: 0px 0 4px;
@@ -696,9 +713,14 @@ section.post img{
 section p {
 	margin: 8px 0;
 }
+
+.post p {
+	font-size: 16px;
+}
+
 .posted {
-	font-size: 13px;
-	color: #888;
+	font-size: 14px;
+	color: #333;
 }
 span#nextlink {
 	display: inline;
@@ -720,7 +742,7 @@ a.addthis_button_preferred_1:hover, a.addthis_button_preferred_2:hover, a.addthi
 }
 
 #sidebar {
-	font-family: 'Open Sans', 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif;
+	font-family: 'Roboto', 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif;
 	color: #a0a0a0;
 	background-color: #FAFAFA;
 	background: -moz-linear-gradient(top, rgba(250,250,250,1) 50%, rgba(255,255,255,0) 100%); /* FF3.6+ */
@@ -783,11 +805,11 @@ h3.widget-title {
 	border-bottom: 1px dashed #ccc;
 }
 h3.widget-title a:link {color:rgba(0,70,124,1); text-decoration: none;}
-h3.widget-title a:hover {color:rgba(111,146,168,1); text-decoration: none;}
+h3.widget-title a:hover {color:#265A87; text-decoration: none;}
 h3.widget-title a:visited {color:rgba(0,70,124,1); text-decoration: none;}
 h3.widget-title a:active {color:rgba(0,70,124,1); text-decoration: none;}
 table {
-	font-family: 'Open Sans', 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif;
+	font-family: 'Roboto', 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif;
 	border-collapse: separate;
 	font-size: 12px;
 	line-height: 1;
@@ -846,7 +868,7 @@ a.article-promo span{
 }
 #footer p {margin: 2px 0;}
 #footer {
-	font-family: 'Open Sans', 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif;
+	font-family: 'Roboto', 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif;
 	text-align: center;
 	margin-top: 22px;
 	padding: 12px 0;
@@ -998,7 +1020,7 @@ table#wp-calendar {
 }
 table#wp-calendar, #wp-calendar tbody, #wp-calendar tfoot, #wp-calendar thead, #wp-calendar tr, #wp-calendar th, #wp-calendar td {
 	color: #565656;
-	font-family: 'Open Sans', 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif;
+	font-family: 'Roboto', 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif;
 /* 	border: 1px solid rgba(207,207,207,0.4); */
 	line-height: 1.5;
 	text-align: center;
@@ -1187,4 +1209,22 @@ td#next {
 	-webkit-transition:all .2s ease-out;
 	-moz-transition:all .2s ease-out;
 	transition:all .2s ease-out;
+}
+
+/* Marvin */
+h2 a:link {
+	color: rgba(0,70,124,1);
+}
+
+h2 a:visited {
+	color: #445764;
+}
+
+
+.tag-cannabis .cannabis-tab,
+.cannabis-tab:hover,
+[data-tag="cannabis"] .cannabis-tab
+{
+	color: white !important;
+	background: #477a2b;
 }
