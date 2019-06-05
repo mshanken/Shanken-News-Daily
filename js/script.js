@@ -14,8 +14,8 @@ yepnope([
 {
 	test: document.getElementsByClassName('wpcf7').length,
 	yep: {
-		'contactFormJS': 'http://shankennewsdaily.com/wp-content/plugins/contact-form-7/jquery.form.js',
-		'contactScriptsJS': 'http://shankennewsdaily.com/wp-content/plugins/contact-form-7/scripts.js'
+		'contactFormJS': 'https://shankennewsdaily.com/wp-content/plugins/contact-form-7/jquery.form.js',
+		'contactScriptsJS': 'https://shankennewsdaily.com/wp-content/plugins/contact-form-7/scripts.js'
 	}
 },
 {
@@ -25,6 +25,6 @@ yepnope([
 	}
 },
 {
-	load : 'http://www.google-analytics.com/ga.js'
+	load : 'https://www.google-analytics.com/ga.js'
 }
 ]);

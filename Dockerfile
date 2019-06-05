@@ -1,4 +1,4 @@
-FROM tutum/wordpress
+FROM wordpress:php7.3-fpm
 
 MAINTAINER M. Shanken Communications <dev@mshanken.com>
 
