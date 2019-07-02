@@ -45,7 +45,7 @@ You will also receive the Cannabis edition as part of your subscription.
 		<?php endif; ?>
 	<p><?php edit_post_link( __( 'Edit', 'twentyten' ), '', '' ); ?></p>
 
-		<p><a href="http://www.shankennewsdaily.com/index.php/impact-databank-report/" title="Order Impact Databank" class="article-promo">Get your first look at 2017 data and 2018 projections for the wine and spirits industries. <span>Order your 2018 Impact Databank Reports</span>. Click here.</a> </p>
+		<p><a href="https://winespectator.wufoo.com/forms/q1tp0ys41mdhey0/" title="Order Impact Databank" class="article-promo">Get your first look at 2018 data and 2019 projections for the wine and spirits industries. <span>Order your 2019 Impact Databank Reports</span>. Click here.</a> </p>
 
 		</section>
 		<p><span id="prevlink">Previous&nbsp;:&nbsp;<?php previous_post_link( '%link', '%title ' . __( '' ) . '' ); ?></span>
