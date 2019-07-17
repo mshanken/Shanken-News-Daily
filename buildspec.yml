@@ -6,8 +6,6 @@ phases:
       docker: 18
   pre_build:
     commands:
-      - apt-get update
-      - apt-get install -y docker
       - echo Logging in to Amazon ECR...
       - $(aws ecr get-login --no-include-email --region $AWS_DEFAULT_REGION)
       - REPOSITORY_URI=477350685613.dkr.ecr.us-east-1.amazonaws.com/snd
