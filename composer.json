@@ -1,0 +1,27 @@
+{
+  "name": "mshanken/shanken-news-daily",
+  "descripiton": "Composer file that setups up the SND environment from a plugin persepctive.",
+  "type": "project",
+  "minimum-stability": "dev",
+  "repositories": [{
+    "type": "composer",
+    "url": "https://wpackagist.org"
+  }],
+  "require": {
+    "wpackagist-plugin/akismet": "*",
+    "wpackagist-plugin/wordpress-seo": "*",
+    "wpackagist-plugin/disable-gutenberg": "*",
+    "wpackagist-plugin/amazon-s3-and-cloudfront": "*",
+    "wpackagist-plugin/amazon-web-services": "*",
+    "wpackagist-plugin/backwpup": "*",
+    "wpackagist-plugin/wp-super-cache": "*",
+    "wpackagist-plugin/wp-mail-smtp": "*",
+    "wpackagist-theme/twentytwelve": "*"
+  },
+  "extra": {
+    "installer-paths": {
+      "wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
+      "wp-contnet/themes/{$name}/": ["type:wordpress-theme"]
+    }
+  }
+}
