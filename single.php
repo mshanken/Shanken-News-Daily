@@ -20,7 +20,7 @@
 
 <?php endif; ?>
 
-<a href="http://newsletters.shankennewsdaily.com/" title="Subscribe to Shanken News Daily’s Email Newsletter" style="display:block; padding:0.56em 0; margin: 0; font-style:italic; font-weight:bold;font-size:1.1em;line-height:1.28;">Subscribe to Shanken News Daily’s Email Newsletter, delivered to your inbox each morning.
+<a href="https://newsletters.shankennewsdaily.com/" title="Subscribe to Shanken News Daily’s Email Newsletter" style="display:block; padding:0.56em 0; margin: 0; font-style:italic; font-weight:bold;font-size:1.1em;line-height:1.28;">Subscribe to Shanken News Daily’s Email Newsletter, delivered to your inbox each morning.
 <?php if (has_tag('cannabis')):?>
 You will also receive the Cannabis edition as part of your subscription.
 				<?php endif; ?>
@@ -36,7 +36,7 @@ You will also receive the Cannabis edition as part of your subscription.
 	<li><a class="addthis_counter addthis_bubble_style"></a></li>
 </ul>
 <script type="text/javascript">var addthis_config = {"data_track_clickback":true};</script>
-<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4daee8be31d57ce8"></script>
+<script type="text/javascript" src="https://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4daee8be31d57ce8"></script>
 <!-- AddThis Button END -->
 
 <?php $tags_list = get_the_tag_list( '', ', ' );
