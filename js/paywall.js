@@ -114,7 +114,7 @@ function performRestrictedBusinessLogic() {
   // Fire GTM event by pushing data to dataLayer
   dataLayer.push({'event': 'modal_restricted_fire'});
 
-  var subscribeLink = 'https://msh.dragonforms.com/QXnew30d1d',
+  var subscribeLink = 'https://newsletters.shankennewsdaily.com',
     modalTitleText = '<a href="'+subscribeLink+'" onclick="dataLayer.push({\'event\'\: \'modal_paywall_click\'});"><img class="img-responsive" src="https://img.mshanken.com/d/snd/SDN_logo-Blocker.gif"></a>',
     modalBodyText = '<span>Continue reading this article with a subscription to Shanken News Daily.</span><span>You will also receive the Cannabis Edition e-newsletter.</span><div class="block-limitedoffer">Limited Time Offer<br><a href="'+subscribeLink+'" class="btn btn-primary" onclick="dataLayer.push({\'event\'\: \'modal_paywall_click\'});">$1 for 30 days </a></div>'
     modalBodyForm = '<br>Already a subscriber?  Log in.\
