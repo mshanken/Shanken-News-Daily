@@ -5,10 +5,6 @@ function isPageBlocked() {
   // console.log('Calling isPageBlocked');
   var loc = window.location.href;
 
-  // manually override URLs for testing vs live URL string
-  // Remove this before going live
-  //loc = "http://www.shankennewsdaily.com/index.php/2015/10/30/13664/rothschild-familys-shared-champagne-brand-seeing-sharpened-u-s-focus/";
-
   // console.log('URL location is:',loc);
 
   var urlRegex = new RegExp(/index\.php\/\d\d\d\d/); // Look for index.php/DDDD
@@ -57,10 +53,7 @@ function incrementPaywallCookie(oldValue) {
         newValue = 1;
     else
         newValue = oldValue+1;
-    // console.log('setPaywallCookie called with name of ', cookieInfo.name);
-    // console.log('setPaywallCookie called with options of ', cookieInfo.options);
     cookieSet = Cookies.set(cookieInfo.name, newValue, cookieInfo.options);
-    // console.log('cookieSet is:', cookieSet);
 }
 
 // Remove the cookie if we need to
@@ -81,7 +74,6 @@ function getModalBody(titleText, bodyText, eventNameGA) {
 function validateEmail(email) {
   var emailRegex = new RegExp(/^.+@.+\..+$/);
   var validationResult = emailRegex.test(email);
-  // console.log('Valid email, sort of?: ',validationResult);
   return validationResult;
 }
 
@@ -123,8 +115,7 @@ function performRestrictedBusinessLogic() {
   dataLayer.push({'event': 'modal_restricted_fire'});
 
   var subscribeLink = 'https://newsletters.shankennewsdaily.com',
-    modalTitleText = '<a href="'+subscribeLink+'" onclick="dataLayer.push({\'event\'\: \'modal_paywall_click\'});"><img class="img-responsive" src="http://SHANKDNEW-ElasticL-A0CNGVQLG2YI-1454536625.us-east-1.elb.amazonaws.com/wp-content/uploads/2017/11/SDN_logo-Blocker.gif"></a>',
-    // modalBodyText = 'Receive full access to <strong>ShankenNewsDaily.com <br class="hidden-xs">AND</strong> get <strong>Shanken News Daily newsletter</strong> in your <br class="hidden-xs">inbox, every weekday morning. It\'s industry news <br class="hidden-xs">you won\'t read anywhere else.<br><a href="'+subscribeLink+'" class="btn btn-default btn-lg" onclick="dataLayer.push({\'event\'\: \'modal_paywall_click\'});" style="color:#396b99; margin:20px auto;">START MY SUBSCRIPTION</a>' 
+    modalTitleText = '<a href="'+subscribeLink+'" onclick="dataLayer.push({\'event\'\: \'modal_paywall_click\'});"><img class="img-responsive" src="https://img.mshanken.com/d/snd/SDN_logo-Blocker.gif"></a>',
     modalBodyText = '<span>Continue reading this article with a subscription to Shanken News Daily.</span><span>You will also receive the Cannabis Edition e-newsletter.</span><div class="block-limitedoffer">Limited Time Offer<br><a href="'+subscribeLink+'" class="btn btn-primary" onclick="dataLayer.push({\'event\'\: \'modal_paywall_click\'});">$1 for 30 days </a></div>'
     modalBodyForm = '<br>Already a subscriber?  Log in.\
     <form class="form-inline">\
@@ -137,7 +128,7 @@ function performRestrictedBusinessLogic() {
       <div id="flashMessageWarning" class="alert alert-danger" style="display: none;"></div>\
       <div id="flashMessageSuccess" class="alert alert-success" style="display: none;"></div>\
     </form>',
-    modalImg = '</div><div><img class="img-responsive" src="http://SHANKDNEW-ElasticL-A0CNGVQLG2YI-1454536625.us-east-1.elb.amazonaws.com/wp-content/uploads/2017/09/SND-Blocker.gif" style="margin-bottom:13px;">',
+    modalImg = '</div><div><img class="img-responsive" src="https://img.mshanken.com/d/snd/SND-Blocker.gif" style="margin-bottom:13px;">',
     modalEventName = 'paywall';
   var modalBody = getModalBody(modalTitleText, modalBodyText+modalBodyForm+modalImg, modalEventName);
   // console.log('Modal Body:', modalBody);
@@ -162,7 +153,7 @@ function loginUser(email) {
   clearModalWarning();
 
   // Show what we're doing
-  postModalSuccess('Logging you in now...hold just a second.');
+  postModalSuccess('Logging in...');
 
   // Take the email and toss it against Hallmark
   // But wait 3 seconds in order to give chance for message to be read
@@ -178,8 +169,7 @@ function apiCall(email) {
   if(!email)
     return false;
 
-  // var url = 'http://www.winespectator.com/api/cIGetUserLists?email='+email;
-  var url = 'http://api.shankennewsdaily.com/paywall/paywall2.php?email='+email;
+  var url = 'https://api.shankennewsdaily.com/paywall2.php?email='+email;
 
   $.ajax({
     url: url,
@@ -305,7 +295,7 @@ function authenticationFailed() {
   // First, hide the warning
   clearModalSuccess();
 
-  var subscribeLink = 'http://newsletters.shankennewsdaily.com/'
+  var subscribeLink = 'https://newsletters.shankennewsdaily.com/'
 
   // Then, let them know it failed
   postModalWarning('Sorry. We don\'t recognize that log in information. Please try again.<p>Need help? <a href="mailto:shankennewshelp@mshanken.com?subject=Help with Shanken News Daily website login">Click here</a>. Do you want to subscribe to <i>Shanken News Daily</i>? <a href="'+subscribeLink+'" onclick="dataLayer.push({\'event\'\: \'modal_paywall_authfail_click\'});" style="color:blue">Click here.');
@@ -364,7 +354,3 @@ $(document).ready(function() {
   },1000);
 
 });
-
-
-
-
