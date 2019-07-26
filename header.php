@@ -90,7 +90,7 @@
 							<ul>
 								<li <?php if ( is_home()){echo " class=\"current_page_item\"";}?>><a href="/" title="NEWS HOME">NEWS</a></li>
 								<?php wp_list_pages('exclude=579,24,13247&title_li='); ?>
-	 							<li> <a href="https://winespectator.wufoo.com/forms/q1tp0ys41mdhey0/" title="Impact Databank Reports">Impact Databank Reports</a>
+	 							<li> <a href="https://www.impactdatabank.com/" title="Impact Databank Reports">Impact Databank Reports</a>
 								<li> <a class="cannabis-tab" href="/index.php/tag/cannabis/" title="Cannabis Articles">Cannabis Edition</a>
 								<li><a href="http://pubform.shankennewsdaily.com/" title="M. Shanken Communications Publications">PUBLICATIONS</a></li>
 								<li id="subpage"><a href="http://newsletters.shankennewsdaily.com" title="Subscribe to Shanken News Daily">SUBSCRIBE to SND</a></li>
