@@ -27,7 +27,6 @@
 	<link rel="shortcut icon" href="/wp-content/themes/Shanken-News-Daily/img/favicon.ico">
 	<link rel="apple-touch-icon" href="/wp-content/themes/Shanken-News-Daily/img/apple-touch-icon.png">
 	<link rel="stylesheet" href="/wp-content/themes/Shanken-News-Daily/style.css">
-	<!-- <link rel="stylesheet" href="https://shankennewsdaily.com/wp-content/plugins/contact-form-7/styles.css"> -->
 
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
 
