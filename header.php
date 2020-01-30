@@ -12,8 +12,8 @@
 
 
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-	<link rel="alternate" type="application/rss+xml" title="Shanken News Daily &raquo; Feed" href="http://www.shankennewsdaily.com/index.php/feed/" />
-	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.shankennewsdaily.com/xmlrpc.php?rsd" />
+	<link rel="alternate" type="application/rss+xml" title="Shanken News Daily &raquo; Feed" href="https://www.shankennewsdaily.com/index.php/feed/" />
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.shankennewsdaily.com/xmlrpc.php?rsd" />
 
   <!-- Load Jquery -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
@@ -23,11 +23,11 @@
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-	<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.shankennewsdaily.com/wp-includes/wlwmanifest.xml" />
+	<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.shankennewsdaily.com/wp-includes/wlwmanifest.xml" />
 	<link rel="shortcut icon" href="/wp-content/themes/Shanken-News-Daily/img/favicon.ico">
 	<link rel="apple-touch-icon" href="/wp-content/themes/Shanken-News-Daily/img/apple-touch-icon.png">
 	<link rel="stylesheet" href="/wp-content/themes/Shanken-News-Daily/style.css">
-	<!-- <link rel="stylesheet" href="http://shankennewsdaily.com/wp-content/plugins/contact-form-7/styles.css"> -->
+	<!-- <link rel="stylesheet" href="https://shankennewsdaily.com/wp-content/plugins/contact-form-7/styles.css"> -->
 
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
 
@@ -93,7 +93,7 @@
 	 							<li> <a href="https://winespectator.wufoo.com/forms/q1tp0ys41mdhey0/" title="Impact Databank Reports">Impact Databank Reports</a>
 								<li> <a class="cannabis-tab" href="/index.php/tag/cannabis/" title="Cannabis Articles">Cannabis Edition</a>
 								<li><a href="http://pubform.shankennewsdaily.com/" title="M. Shanken Communications Publications">PUBLICATIONS</a></li>
-								<li id="subpage"><a href="http://newsletters.shankennewsdaily.com" title="Subscribe to Shanken News Daily">SUBSCRIBE to SND</a></li>
+								<li id="subpage"><a href="https://newsletters.shankennewsdaily.com" title="Subscribe to Shanken News Daily">SUBSCRIBE to SND</a></li>
 							</ul>
 					</nav><!-- end nav -->
 
