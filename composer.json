@@ -12,6 +12,7 @@
     "wpackagist-plugin/wordpress-seo": "*",
     "wpackagist-plugin/disable-gutenberg": "*",
     "wpackagist-plugin/amazon-s3-and-cloudfront": "*",
+    "wpackagist-plugin/301-redirects":"dev-trunk",
     "wpackagist-plugin/amazon-web-services": "*",
     "wpackagist-plugin/backwpup": "*",
     "wpackagist-plugin/wp-super-cache": "*",
